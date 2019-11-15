@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+}
+
+nav {
+
+}
+.hamburguer {
+  position: absolute;
+  right: 0;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+[class*='barra'] {
+  width: 30px;
+  height: 3px;
+  background-color: #fb263a;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.menu {
+  display: none;
+}
+.menu ul{
+  float: right;
+}
+.menu li{
+  list-style: none;
+}
+.menu a {
+  text-decoration: none;
+  color: #fb263a;
+}
+
+
+/*--------------------INTRO---------------------*/
+#intro {
+  height: 800px;
+}
+#intro img {
+  z-index: -1;
+  width: 75%;
+  position: absolute;
+  left:0;
+  right:0;
+  margin-top: 150px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.esquerda {
+  background-color: #fb263a;
+  transition:0.5s;
+  display: inline-block;
+  width: 50%;
+  height: 100vh;
+}
+.direita {
+  background-color: #000;
+  transition:0.5s;
+  display: inline-block;
+  float: right;
+  width: 50%;
+  height: 100vh;
+}
+.animacao-intro:hover > .esquerda{
+  width: 0;
+}
+.animacao-intro:hover > .direita{
+  width: 0;
+}
+
+
+
+/*--------------------SAUDAÇÃO---------------------*/
+#saudacao {
+
+}
