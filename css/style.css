@@ -14,24 +14,39 @@ nav {
 [class*='barra'] {
   width: 30px;
   height: 3px;
-  background-color: #fb263a;
+  background-color: #d92d2d;
   margin: 6px 0;
   transition: 0.4s;
 }
 .menu {
   display: none;
+  float: right;
+  background-color: #d92d2d;
+  width: 30vw;
+  height: 100vh;
+  position: fixed;
+  right: 0;
 }
 .menu ul{
-  float: right;
+  margin-top: 50%;
 }
 .menu li{
+  margin-top: 20px;
   list-style: none;
+  text-align: center;
 }
 .menu a {
+  font-size: 3em;
   text-decoration: none;
-  color: #fb263a;
+  color: #fff;
 }
-
+.menu a:hover{
+  color: #000;
+  transition: 0.3s;
+}
+.hamburguer:focus + .menu{
+  display: block;
+}
 
 /*--------------------INTRO---------------------*/
 #intro {
@@ -47,8 +62,11 @@ nav {
   margin-left:auto;
   margin-right:auto;
 }
+.animacao-intro{
+  display: none;
+}
 .esquerda {
-  background-color: #fb263a;
+  background-color: #d92d2d;
   transition:0.5s;
   display: inline-block;
   width: 50%;
