@@ -1,0 +1,51 @@
+aside{
+  padding-top: 50px;
+  float: right;
+  color: #fff;
+}
+#dezembro{
+  height: 1700px;
+  padding-top: 75px;
+  background: #202020;
+}
+a{
+  margin-top: 50px;
+}
+.mes{
+  position: fixed;
+  font-size: 2em;
+  color: #d92d2d;
+  text-align: right;
+}
+.mes h3{
+  margin-right: 15px;
+}
+.linha{
+  border-left: 2px solid #fff;;
+  height: 175vh;
+  margin-left: 85px;
+  margin-right: 75px;
+}
+.evento{
+  display: flex;
+  color: #fff;
+  margin-left: 100px;
+  margin-right: 200px;
+  margin-top: 150px;
+}
+.evento h1{
+  color: #d92d2d;
+  margin-top: 50px;
+  font-size: 7em;
+}
+.evento p{
+  font-weight: 300;
+}
+.info {
+  margin-top: 60px;
+  margin-left: 75px;
+  width: 50%;
+}
+.cartaz img{
+  margin-left: 100px;
+}

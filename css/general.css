@@ -1,0 +1,152 @@
+*{
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+nav img{
+  position: absolute;
+  width: 10%;
+  margin: 20px 20px;
+}
+.hamburguer {
+  position: absolute;
+  right: 0;
+  margin-top: 30px;
+  margin-right: 50px;
+  z-index: 2 ;
+  cursor: pointer;
+}
+input{
+  background: #fff;
+}
+/*---Desenha as 3 barras do hamburguer---*/
+.barra {
+  position: fixed;
+  display: block;
+  background: #d92d2d;
+  width: 30px;
+  height: 3px;
+  transition: 0.2s ease-in-out;
+  border-radius: 200px;
+}
+.barra:before,
+.barra:after {
+  background: #d92d2d;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.2s ease-in-out;
+  border-radius: 200px;
+}
+.barra:before {
+  top: -10px;
+}
+.barra:after {
+  bottom: -10px;
+}
+#hamburguer , #menu{
+  display: none;
+}
+/*--Rotação das barras para formar uma cruz--*/
+input:checked~label .barra {
+  transform: rotate(45deg);
+  background: #fff;
+}
+input:checked~label .barra:before {
+  transform: rotate(90deg);
+  top: 0;
+  background: #fff;
+}
+input:checked~label .barra:after {
+  transform: rotate(90deg);
+  bottom: 0;
+  background: #fff;
+}
+input:checked~label .menu {
+  display: block;
+}
+
+
+
+/*--Desenho do menu--*/
+.menu{
+  display: none;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+.menu-info {
+  float: right;
+  background-color: #d92d2d;
+  width: 30vw;
+  height: 100vh;
+  right: 0;
+  box-shadow: -5px 0px 50px 0px #202020;
+}
+.menu ul{
+  margin-top: 40%;
+}
+.menu li{
+  margin-top: 20px;
+  list-style: none;
+  text-align: right;
+  margin-right: 20px;
+}
+.menu a {
+  font-size: 3em;
+  text-decoration: none;
+  color: #fff;
+}
+.menu a:hover{
+  color: #000;
+  transition: 0.3s;
+}
+.menu h1{
+  position: absolute;
+  user-select: none;
+  font-weight: 900;
+  font-size: 450px;
+  color: transparent;
+  -webkit-text-stroke: 5px #000;
+  right: 10px;
+  top: 400px;
+}
+.menu-transp{
+  position: absolute;
+  width: 70vw;
+  height: 100vh;
+  background: rgba(20,20,20,0.8);
+}
+
+
+
+
+/*--------------------FOOTER---------------------*/
+footer{
+  background-color: #202020;
+  height: 200px;
+}
+.footer-container{
+  display: flex;
+  padding-top: 10px;
+  margin-left: 20px;
+  justify-content: space-between;
+}
+.parceiros img{
+  display: block;
+  width: 50%;
+}
+.contactos{
+  margin-top: 50px;
+}
+.contactos p{
+  color: #777;
+}
+.social{
+  margin-top: 60px;
+}
+.social img{
+  width: 20%;
+  margin-right: 20px;
+}

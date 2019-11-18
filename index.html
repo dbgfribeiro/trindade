@@ -2,140 +2,146 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
+    </script>
     <link rel="icon" href="img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/general.css">
     <title>Teatro da Trindade</title>
 </head>
 <body>
 
-<header>
-  <nav>
-    <img src="img/logoFull.png" alt="">
+  <header>
 
-    <input id="hamburguer" type="checkbox" class="check">
-    <label for="hamburguer">
-      <a class="hamburguer" id="mostra-menu"><div>
-        <span class="barra"></span>
-      </div></a>
-      <div class="menu">
-        <div class="menu-info">
-          <ul>
-            <li><a href="index.html">início</a></li>
-            <li><a href="agenda.html">agenda</a></li>
-            <li><a href="sobre.html">sobre</a></li>
-            <li><a href="bilheteira.html">bilheteira</a></li>
-          </ul>
-          <h1>TR</h1>
+    <nav>
+      <a href="index.html"><img src="img/logoFullW.png" alt="logo-trindade"></a>
+
+      <input id="hamburguer" type="checkbox" class="check">
+      <label for="hamburguer">
+        <a class="hamburguer" id="mostra-menu"><div>
+          <span class="barra"></span>
+        </div></a>
+        <div class="menu">
+          <div class="menu-info">
+            <ul>
+              <li><a href="index.html">início</a></li>
+              <li><a href="agenda.html">agenda</a></li>
+              <li><a href="sobre.html">sobre</a></li>
+              <li><a href="bilheteira.html">bilheteira</a></li>
+            </ul>
+            <h1>TR</h1>
+          </div>
+          <div class="menu-transp"></div>
         </div>
-        <div class="menu-transp"></div>
+      </label>
+
+    </nav>
+
+  </header>
+
+
+  <main>
+
+
+    <section id="intro">
+      <div class="animacao-intro">
+        <div class="esquerda"></div>
+        <div class="direita"></div>
       </div>
-    </label>
-
-  </nav>
-
-</header>
-
-
-<main>
-
-  <section id="intro">
-    <img src="img/intro.jpg" alt="">
-    <div class="animacao-intro">
-      <div class="esquerda"></div>
-      <div class="direita"></div>
-    </div>
-  </section>
-
-
-  <section id="saudacao">
-
-    <div class="conteudo-saudacao">
-      <video autoplay loop muted controls>
-        <source src="img/150anos.mp4" type="video/mp4">
-      </video>
-      <div class="texto-saudacao">
-        <h1>Bem-Vindo</h1>
-        <p>Ocorre este ano o 150º aniversário da estreia do primeiro espetáculo do Teatro da Trindade, realizado em 1867. O Trindade representou na época, e ainda hoje, representa um referencial de cultura e de espetáculo, cénica e arquitetonicamente enquadrado no modelo de teatro oitocentista que perdura, mas conciliado com sucessivas intervenções, designadamente na tecnologia de cena.</p>
-      </div>
-    </div>
-
-  </section>
+    </section>
 
 
 
-  <section id="espetaculos">
-    <h1>Espetáculos</h1>
+    <section id="saudacao">
 
-    <div class="slider">
-
-      <div class="cartaz">
-        <img src="img/poster1.jpg" alt="cartaz-espetaculo">
-        <p>Espetáculo 1</p>
-      </div>
-
-      <div class="cartaz">
-        <img src="img/poster1.jpg" alt="cartaz-espetaculo">
-        <p>Espetáculo 2</p>
-      </div>
-
-      <div class="cartaz">
-        <img src="img/poster1.jpg" alt="cartaz-espetaculo">
-        <p>Espetáculo 3</p>
-      </div>
-
-    </div>
-
-    <a href="agenda.html"><p>Ver mais...</p></a>
-
-  </section>
-
-
-
-  <section id="subscricao">
-
-    <form class="formulario">
-      <div class="info-form">
-        <h2>Subscreve</h2>
-        <p>Notícias Teatro da Trindade</p>
-      </div>
-      <div class="inserir">
-        <input type="text" name="nome" placeholder="Nome">
-        <input type="email" name="email" placeholder="Endereço de e-mail">
-      </div>
-      <div class="submissao">
-        <input type="button" name="subscrever" value="Submeter">
-      </div>
-    </form>
-  </section>
-
-
-</main>
-
-
-
-
-<footer>
-
-    <div class="footer-container">
-        <div class="parceiros">
-            <img src="img/inatel.png" alt="logo-inatel">
-            <img src="img/meo.png" alt="logo-meo">
-            <img src="img/publico.png" alt="logo-publico">
+      <div class="conteudo-saudacao">
+        <video autoplay loop muted controls>
+          <source src="img/150anos.mp4" type="video/mp4">
+        </video>
+        <div class="texto-saudacao">
+          <span class="linha"></span>
+          <h1>Bem-Vindo</h1>
+          <p>Ocorre este ano o 150º aniversário da estreia do primeiro espetáculo do Teatro da Trindade, realizado em 1867. O Trindade representou na época, e ainda hoje, representa um referencial de cultura e de espetáculo, cénica e arquitetonicamente enquadrado no modelo de teatro oitocentista que perdura, mas conciliado com sucessivas intervenções, designadamente na tecnologia de cena.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-        <div class="contactos">
-            <p>R. Nova da Trindade 9,<br>1200-301 Lisboa</p>
-            <p>teatro.trindade@inatel.pt</p>
-            <p>213420000</p>
-        </div>
-        <div class="social">
-            <a href="https://www.facebook.com/TeatrodaTrindade/" target="_blank"><img src="img/facebook.png" alt="icon-facebook"></a>
-            <a href="https://www.instagram.com/teatrodatrindade/" target="_blank"><img src="img/instagram.png" alt="icon-instagram"></a>
-            <a href="https://www.bol.pt/Projecto/EntidadesAderentes/4134-teatro_da_trindade_inatel" target="_blank"><img src="img/ticket.png" alt="icon-bilhete"></a>
-        </div>
-    </div>
+      </div>
 
-</footer>
+    </section>
+
+
+
+    <section id="espetaculos">
+      <span class="linha"></span>
+      <h1>Espetáculos</h1>
+
+      <div class="slider">
+
+        <div class="cartaz">
+          <img src="img/poster1.jpg" alt="cartaz-espetaculo">
+          <p>Espetáculo 1</p>
+        </div>
+
+        <div class="cartaz">
+          <img src="img/poster1.jpg" alt="cartaz-espetaculo">
+          <p>Espetáculo 2</p>
+        </div>
+
+        <div class="cartaz">
+          <img src="img/poster1.jpg" alt="cartaz-espetaculo">
+          <p>Espetáculo 3</p>
+        </div>
+
+      </div>
+
+      <a href="agenda.html"><p>Ver mais...</p></a>
+
+    </section>
+
+
+
+    <section id="subscricao">
+
+      <form class="formulario">
+        <div class="info-form">
+          <h2>Subscreve</h2>
+          <p>Notícias Teatro da Trindade</p>
+        </div>
+        <div class="inserir">
+          <input type="text" name="nome" placeholder="Nome">
+          <input type="email" name="email" placeholder="Endereço de e-mail">
+        </div>
+        <div class="submissao">
+          <input type="button" name="subscrever" value="Submeter">
+        </div>
+      </form>
+    </section>
+
+
+  </main>
+
+
+
+  <footer>
+
+      <div class="footer-container">
+          <div class="parceiros">
+              <img src="img/inatelW.png" alt="logo-inatel">
+              <img src="img/meoW.png" alt="logo-meo">
+              <img src="img/publicoW.png" alt="logo-publico">
+          </div>
+          <div class="contactos">
+              <p>R. Nova da Trindade 9,<br>1200-301 Lisboa</p>
+              <p>teatro.trindade@inatel.pt</p>
+              <p>213420000</p>
+          </div>
+          <div class="social">
+              <a href="https://www.facebook.com/TeatrodaTrindade/" target="_blank"><img src="img/facebookW.png" alt="icon-facebook"></a>
+              <a href="https://www.instagram.com/teatrodatrindade/" target="_blank"><img src="img/instagramW.png" alt="icon-instagram"></a>
+              <a href="https://www.bol.pt/Projecto/EntidadesAderentes/4134-teatro_da_trindade_inatel" target="_blank"><img src="img/ticketW.png" alt="icon-bilhete"></a>
+          </div>
+      </div>
+
+  </footer>
 
 </body>
 </html>

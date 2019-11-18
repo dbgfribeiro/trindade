@@ -1,123 +1,22 @@
-*{
-  margin: 0;
-  font-family: 'Lato', sans-serif;
-}
-
-nav img{
-  position: absolute;
-  width: 10%;
-  margin: 20px 20px;
-}
-.hamburguer {
-  position: absolute;
-  right: 0;
-  margin-top: 30px;
-  margin-right: 50px;
-  z-index: 1;
-  cursor: pointer;
-}
-
-
-/*---Desenha as 3 barras do hamburguer---*/
-.barra {
-  position: fixed;
-  display: block;
-  background: #d92d2d;
-  width: 30px;
-  height: 3px;
-  transition: .5s ease-in-out;
-}
-.barra:before,
-.barra:after {
-  background: #d92d2d;
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transition: .5s ease-in-out;
-}
-.barra:before {
-  top: -10px;
-}
-.barra:after {
-  bottom: -10px;
-}
-#hamburguer , #menu{
-  display: none;
-}
-/*--Rotação das barras para formar uma cruz--*/
-input:checked~label .barra {
-  transform: rotate(45deg);
-  background: #fff;
-}
-input:checked~label .barra:before {
-  transform: rotate(90deg);
-  top: 0;
-  background: #fff;
-}
-input:checked~label .barra:after {
-  transform: rotate(90deg);
-  bottom: 0;
-  background: #fff;
-}
-input:checked~label .menu {
-  display: block;
-}
-
-/*--Desenho do menu--*/
-.menu{
-  display: none;
-  position: fixed;
-  width: 100vw;
-}
-.menu-info {
-  float: right;
-  background-color: #d92d2d;
-  width: 30vw;
-  height: 100vh;
-  right: 0;
-  box-shadow: -5px 0px 50px 0px #202020;
-}
-.menu ul{
-  margin-top: 40%;
-}
-.menu li{
-  margin-top: 20px;
-  list-style: none;
-  text-align: right;
-  margin-right: 20px;
-}
-.menu a {
-  font-size: 3em;
-  text-decoration: none;
-  color: #fff;
-}
-.menu a:hover{
-  color: #000;
-  transition: 0.3s;
-}
-.menu h1{
-  position: absolute;
-  font-weight: 900;
-  font-size: 450px;
-  color: transparent;
-  -webkit-text-stroke: 5px #000;
-  right: 10px;
-  top: 400px;
-}
-.menu-transp{
-  position: absolute;
-  width: 70vw;
-  height: 100vh;
-  background: rgba(20,20,20,0.8);
-}
-
 
 
 /*--------------------INTRO---------------------*/
+#intro {
+  background-image: url(../img/intro.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 766px;
+}
+#intro img {
+  z-index: -1;
+  width: 60%;
+  position: absolute;
+  left:0;
+  right:50px;
+  margin-top: 130px;
+  margin-left:auto;
+}
 .animacao-intro{
-  display: none;
 }
 .esquerda {
   background-color: #d92d2d;
@@ -135,23 +34,13 @@ input:checked~label .menu {
   height: 100vh;
 }
 .animacao-intro:hover > .esquerda{
+    transition:0.5s;
   width: 0;
 }
 .animacao-intro:hover > .direita{
   width: 0;
 }
-#intro {
-  height: 800px;
-}
-#intro img {
-  z-index: -1;
-  width: 60%;
-  position: absolute;
-  left:0;
-  right:50px;
-  margin-top: 130px;
-  margin-left:auto;
-}
+
 
 
 
@@ -159,9 +48,19 @@ input:checked~label .menu {
 /*--------------------SAUDAÇÃO---------------------*/
 #saudacao {
   height: 600px;
+  background: #202020;
+}
+#saudacao .linha{
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 3px;
+  position: relative;
+  width: 10%;
 }
 .conteudo-saudacao {
   display: flex;
+  padding-top: 100px;
 }
 .conteudo-saudacao video {
   margin-left: 50px;
@@ -176,7 +75,8 @@ input:checked~label .menu {
   font-weight: 900;
 }
 .texto-saudacao p{
-  font-size: 1.5em;
+  color: #fff;
+  font-size: 1em;
   margin-top: 20px;
   font-weight: lighter;
 }
@@ -187,11 +87,22 @@ input:checked~label .menu {
 #espetaculos{
   height: 700px;
 }
+#espetaculos .linha{
+  margin-top: 50px;
+  background-color: #d92d2d;
+  content: "";
+  display: inline-block;
+  height: 3px;
+  margin-left: 50px;
+  position: relative;
+  width: 5%;
+}
 #espetaculos h1{
   margin-left: 50px;
   font-size: 2em;
   font-weight: 900;
 }
+
 #espetaculos a{
   text-align: center;
 }
@@ -224,9 +135,9 @@ input:checked~label .menu {
   background-size: cover;
 }
 form {
-  width: 600px;
-  height: 450px;
-  margin-top: 200px;
+  width: 45vw;
+  height: 55vh;
+  margin-top: 30px;
   margin-right: 50px;
   border: 2px solid #fff;
   float: right;
@@ -251,8 +162,8 @@ input:focus {
   margin-top: 50px;
 }
 .inserir input{
-  width: 375px;
-  height: 50px;
+  width: 25vw;
+  height: 6vh;
   margin-top: 10px;
   font-size: 1em;
   background: transparent;
@@ -265,8 +176,8 @@ input:focus {
   margin-left: 50px;
 }
 .submissao input{
-  width: 387px;
-  height: 50px;
+  width: 26vw;
+  height: 6vh;
   font-size: 1em;
   background: transparent;
   padding-left: 10px;
@@ -277,14 +188,4 @@ input:focus {
 .submissao input:hover{
   background: #777;
   color: #202020;
-}
-
-/*--------------------FOOTER---------------------*/
-footer{
-  background-color: #202020;
-  height: 400px;
-}
-.footer-container{
-  display: flex;
-  justify-content: center;
 }

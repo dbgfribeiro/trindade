@@ -3,104 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="img/favicon.ico">
-    <title>Agenda</title>
+    <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/agenda.css">
+    <title>Agenda</title>
 </head>
 <body>
 
-<header>
+  <header>
+
     <nav>
-        <a href="index.html"><img src="img/LOGO.png" alt="logo-teatro"></a>
-        <ul>
-            <li><a href="agenda.html">Agenda</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="bilheteira.html">Bilheteira</a></li>
-        </ul>
+      <a href="index.html"><img src="img/logoFullW.png" alt="logo-trindade"></a>
+
+      <input id="hamburguer" type="checkbox" class="check">
+      <label for="hamburguer">
+        <a class="hamburguer" id="mostra-menu"><div>
+          <span class="barra"></span>
+        </div></a>
+        <div class="menu">
+          <div class="menu-info">
+            <ul>
+              <li><a href="index.html">início</a></li>
+              <li><a href="agenda.html">agenda</a></li>
+              <li><a href="sobre.html">sobre</a></li>
+              <li><a href="bilheteira.html">bilheteira</a></li>
+            </ul>
+            <h1>TR</h1>
+          </div>
+          <div class="menu-transp"></div>
+        </div>
+      </label>
+
     </nav>
-</header>
 
-<main>
+  </header>
 
-  <section id="calendario">
+  <main>
 
-    <aside class="cronologia">
-      <div class="mes">
-        <span>&bull;</span>
-        <h3>DEZ.</h3>
-      </div>
-      <div class="linha"></div>
-    </aside>
+    <section id="dezembro">
 
-    <div class="evento">
-      <div class="dia">
-        <h1>1</h1>
-      </div>
-      <div class="info">
-        <h2>Título</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div class="cartaz">
-        <img src="" alt="cartaz-evento">
-      </div>
-    </div>
-
-    <div class="evento">
-      <div class="dia">
-        <h1>5</h1>
-      </div>
-      <div class="info">
-        <h2>Título</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div class="cartaz">
-        <img src="" alt="cartaz-evento">
-      </div>
-    </div>
-
-    <div class="evento">
-      <div class="dia">
-        <h1>13</h1>
-      </div>
-      <div class="info">
-        <h2>Título</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div class="cartaz">
-        <img src="" alt="cartaz-evento">
-      </div>
-    </div>
-
-  </section>
-
-
-</main>
-
-
-
-<footer>
-
-    <div class="footer-container">
-        <div class="parceiros">
-            <img src="img/inatel.png" alt="logo-inatel">
-            <img src="img/meo.png" alt="logo-meo">
-            <img src="img/publico.png" alt="logo-publico">
+      <aside class="cronologia">
+        <div class="mes">
+          <span>&bull;</span>
+          <h3>DEZ.</h3>
         </div>
-        <div class="contactos">
-            <p>R. Nova da Trindade 9,<br>1200-301 Lisboa</p>
-            <p>teatro.trindade@inatel.pt</p>
-            <p>213420000</p>
-        </div>
-        <div class="social">
-            <a href="https://www.facebook.com/TeatrodaTrindade/" target="_blank"><img src="img/facebook.png" alt="icon-facebook"></a>
-            <a href="https://www.instagram.com/teatrodatrindade/" target="_blank"><img src="img/instagram.png" alt="icon-instagram"></a>
-            <a href="https://www.bol.pt/Projecto/EntidadesAderentes/4134-teatro_da_trindade_inatel" target="_blank"><img src="img/ticket.png" alt="icon-bilhete"></a>
-        </div>
-        <div class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.2646853344363!2d-9.144565584660882!3d38.711731679599666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19347f75a1d8bd%3A0xc53f917cc09c7b37!2sTeatro%20da%20Trindade%20%2F%20Inatel!5e0!3m2!1spt-PT!2spt!4v1571326673465!5m2!1spt-PT!2spt" width="600" height="450" allowfullscreen=""></iframe>
-        </div>
-    </div>
+        <div class="linha"></div>
+      </aside>
 
-</footer>
+      <div class="evento">
+        <div class="dia">
+          <h1>1</h1>
+        </div>
+        <div class="info">
+          <h2>Título</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="cartaz">
+          <img src="img/agenda1.jpg" alt="cartaz-evento">
+        </div>
+      </div>
+
+      <div class="evento">
+        <div class="dia">
+          <h1>5</h1>
+        </div>
+        <div class="info">
+          <h2>Título</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="cartaz">
+          <img src="img/agenda1.jpg" alt="cartaz-evento">
+        </div>
+      </div>
+
+      <div class="evento">
+        <div class="dia">
+          <h1>13</h1>
+        </div>
+        <div class="info">
+          <h2>Título</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="cartaz">
+          <img src="img/agenda1.jpg" alt="cartaz-evento">
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+  </main>
+
+
+  <footer>
+
+      <div class="footer-container">
+          <div class="parceiros">
+              <img src="img/inatelW.png" alt="logo-inatel">
+              <img src="img/meoW.png" alt="logo-meo">
+              <img src="img/publicoW.png" alt="logo-publico">
+          </div>
+          <div class="contactos">
+              <p>R. Nova da Trindade 9,<br>1200-301 Lisboa</p>
+              <p>teatro.trindade@inatel.pt</p>
+              <p>213420000</p>
+          </div>
+          <div class="social">
+              <a href="https://www.facebook.com/TeatrodaTrindade/" target="_blank"><img src="img/facebookW.png" alt="icon-facebook"></a>
+              <a href="https://www.instagram.com/teatrodatrindade/" target="_blank"><img src="img/instagramW.png" alt="icon-instagram"></a>
+              <a href="https://www.bol.pt/Projecto/EntidadesAderentes/4134-teatro_da_trindade_inatel" target="_blank"><img src="img/ticketW.png" alt="icon-bilhete"></a>
+          </div>
+      </div>
+
+  </footer>
 
 </body>
 </html>
