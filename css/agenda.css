@@ -1,13 +1,11 @@
 #agenda{
-  height: 5000px;
+  height: auto;
   padding-top: 75px;
   background: #202020;
+  padding-bottom: 400px;
 }
 aside{
   float: right;
-}
-a{
-  margin-top: 50px;
 }
 .mes {
   display: flex;
@@ -37,23 +35,46 @@ a{
 .evento{
   display: flex;
   color: #fff;
-  margin-left: 100px;
-  margin-right: 75px;
-  margin-top: 150px;
+  margin-left: 5%;
+  margin-right: 10%;
+  margin-top: 10%;
 }
 .evento h1{
   color: #d92d2d;
-  margin-top: 50px;
-  font-size: 7em;
+  margin-top: 20%;
+  font-size: 7vw;
 }
 .evento p{
+  font-size: 1em;
   font-weight: 300;
 }
 .info {
-  margin-top: 60px;
-  margin-left: 75px;
+  margin-top: 5%;
+  margin-left: 5%;
   width: 50%;
 }
 .cartaz img{
-  margin-left: 100px;
+  width: 100%;
+  margin-left: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 900px) {
+  .evento {
+    margin-top: 75px;
+    display: block;
+  }
+  .evento h1{
+    margin-left: 5%;
+  }
+  .evento p{
+    font-size: 14px;
+  }
+  .info{
+    width: 100%;
+  }
+  .cartaz img{
+    margin-top: 5%;
+    margin-left: 5%;
+  }
 }

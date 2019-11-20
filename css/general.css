@@ -13,13 +13,15 @@ nav img{
   margin-top: 25px;
   margin-right: 25px;
   z-index: 2 ;
-  cursor: pointer;
   width: 30px;
   padding-top: 11px;
   height: 13px;
 }
 input{
   background: #fff;
+}
+label{
+  cursor: pointer;
 }
 /*---Desenha as 3 barras do hamburguer---*/
 .barra {
@@ -77,27 +79,6 @@ input:checked~div .menu {
   width: 100vw;
   z-index: 1;
 }
-.tr {
-  display: none;
-  position: absolute;
-  height: 100vh;
-  width: 25vw;
-}
-.tr h2{
-  font-weight: 900;
-  font-size: 300px;
-  margin-top: calc(100vh - 300px);
-  color: transparent;
-  -webkit-text-stroke: 3px black;
-}
-.menu img{
-  display: none;
-  position: absolute;
-  height: 100vh;
-  width: 25vw;
-  margin: 0;
-  top: 0;
-}
 .menu-info {
   float: right;
   background-color: #d92d2d;
@@ -106,23 +87,32 @@ input:checked~div .menu {
   right: 0;
   box-shadow: -5px 0px 50px 0px #202020;
 }
-.menu ul{
+.menu-info ul{
   margin-top: 35%;
 }
-.menu li{
+.menu-info li{
   margin-top: 40px;
   list-style: none;
   text-align: right;
   margin-right: 20px;
 }
-.menu a {
+.menu-info a {
   font-size: 3em;
   text-decoration: none;
+  -webkit-user-select: none;
   color: #fff;
 }
-.menu a:hover{
+.menu-info a:hover{
   color: #000;
   transition: 0.3s;
+}
+.menu-info img{
+  display: none;
+  position: absolute;
+  height: 100vh;
+  width: 25vw;
+  margin: 0;
+  top: 0;
 }
 .menu-transp{
   position: absolute;
@@ -139,6 +129,9 @@ input:checked~div .menu {
   }
   .menu-transp{
     width: 50vw;
+  }
+  .menu img{
+    width: 55vw;
   }
 }
 

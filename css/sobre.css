@@ -1,39 +1,98 @@
 #historia {
-  height: 700px;
+  height: 825px;
+}
+.titulo{
+  margin-top: 150px;
+  margin-left: 33vw;
+  position: absolute;
+}
+.titulo h1, h2{
+  width: 100%;
+  margin-left: 5%;
+  font-size: 5vw;
+}
+.titulo h2{
+  margin-left: 35%;
 }
 .info {
-  margin-left: 100px;
-  margin-right: 100px;
-  padding-top: 120px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 150px;
   display: flex;
 }
 .info img{
   width: 30%;
+  height: 30%;
 }
-.info-texto h1, h2{
-  margin-left: 50px;
-  font-size: 4em;
-}
-.info-texto h2{
-  margin-left: 200px;
-}
-.info-texto p{
-  margin-top: 50px;
-  margin-left: 200px;
+.info p{
+  margin-top: 15%;
+  margin-left: 13%;
   font-size: 18px;
 }
+@media screen and (max-width: 800px) {
+  .titulo{
+    margin-top: 250px;
+    margin-left: 52vw;
+  }
+  .titulo h1, h2{
+    font-size: 7vw;
+  }
+  .titulo h2{
+    margin-left: 4%;
+  }
+  .info{
+    padding-top: 100px;
+    display: block;
+  }
+  .info img{
+    width: 50%;
+  }
+  .info p{
+    margin-top: 5%;
+    font-size: 12px;
+    margin-left: 0;
+  }
+}
+
+
+
+/*----------------CONDIÇÕES-----------------*/
 
 #condicoes{
-  height: 800px;
+  height: 600px;
 }
 #condicoes h1{
   font-size: 3em;
-  margin-top: 150px;
+  margin-top: 125px;
   margin-right: 20vw;
   float: right;
 }
+.capacidade{
+  background: #f00;
+  position: relative;
+  margin-left: 100px;
+  width: 50vw;
+}
 .interior img{
-  width: 50%;
-  margin-top: 100px;
-  margin-left: 75px;
+  width: 100%;
+  opacity: 0.6;
+  position: absolute;
+}
+.total {
+  position: absolute;
+  text-align: center;
+  margin-top: 18%;
+  margin-left: 15%;
+}
+.total img{
+  width: 10vw;
+}
+.lugares {
+  position: absolute;
+  text-align: center;
+  margin-top: 12vh;
+  margin-left: 33vw;
+}
+.lugares img{
+  width: 7vw;
 }
