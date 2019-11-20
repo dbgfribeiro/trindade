@@ -2,6 +2,7 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, height=device-height">
     <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/general.css">
@@ -15,10 +16,10 @@
       <a href="index.html"><img src="img/logoFullW.png" alt="logo-trindade"></a>
 
       <input id="hamburguer" type="checkbox" class="check">
-      <label for="hamburguer">
-        <a class="hamburguer" id="mostra-menu"><div>
+      <div>
+        <label for="hamburguer" class="hamburguer" id="mostra-menu"><div>
           <span class="barra"></span>
-        </div></a>
+        </div></label>
         <div class="menu">
           <div class="menu-info">
             <ul>
@@ -31,34 +32,34 @@
           </div>
           <div class="menu-transp"></div>
         </div>
-      </label>
+      </div>
 
     </nav>
 
   </header>
 
+
   <main>
 
     <section id="historia">
-      <div class="info-1">
-        <img src="img/trindade.jpg" alt="fotografia-teatro">
-        <h1>Teatro da Trindade</h1>
-        <p>Situado numa das zonas mais antigas de Lisboa, entre o Chiado e o Bairro Alto, o Teatro da Trindade foi construído em pleno séc. XIX, quando o centro social e cultural da cidade se situava exactamente nesta área. Testemunho dessa época, o Trindade transporta consigo a memória de um tempo em que a burguesia alfacinha ia às soirées ao Chiado, a um dos três teatros que ainda hoje se mantêm nessas poucas ruas: o S. Carlos, o S. Luís (então chamado rainha D. Amélia) e o Trindade. Mas, provavelmente devido à novidade e aos requintes e decoração e apetrechamento, que incluíam um engenhoso sistema de ventilação da sala e uma plateia que podia subir até ao nível do palco e assim permitir a realização de bailes, o Trindade rapidamente se transformou no teatro mais chique da capital, tal como Eça de Queirós o retrata nos seus romances.</p>
+
+      <div class="info">
+        <img src='img/trindade_vintage.png' onmouseover="this.src='img/trindade_2019.png';" onmouseout="this.src='img/trindade_vintage.png';"/>
+        <div class="info-texto">
+          <h1>Um<span style="color:#d92d2d"> Teatro</span></h1>
+          <h2>com<span style="color:#d92d2d"> História.</span></h2>
+          <p>Situado numa das zonas mais antigas de Lisboa, entre o Chiado e o Bairro Alto, o Teatro da Trindade foi construído em pleno séc. XIX, quando o centro social e cultural da cidade se situava exactamente nesta área. Testemunho dessa época, o Trindade transporta consigo a memória de um tempo em que a burguesia alfacinha ia às soirées ao Chiado, a um dos três teatros que ainda hoje se mantêm nessas poucas ruas: o S. Carlos, o S. Luís (então chamado rainha D. Amélia) e o Trindade. Mas, provavelmente devido à novidade e aos requintes e decoração e apetrechamento, que incluíam um engenhoso sistema de ventilação da sala e uma plateia que podia subir até ao nível do palco e assim permitir a realização de bailes, o Trindade rapidamente se transformou no teatro mais chique da capital, tal como Eça de Queirós o retrata nos seus romances.</p>
+        </div>
       </div>
 
-      <div class="info-2">
-        <img src="img/antigo.jpg" alt="fotografia-antiga">
-        <p>Implantado no local onde, antes do grande terramoto de 1755, existira o Palácio dos Condes de Alva e funcionara a Academia Trindade - a primeira tentativa conhecida de implantar um Teatro Popular de Ópera em Lisboa - o Teatro da Trindade deveu a sua existência à iniciativa do empresário, homem de letras e director teatral Francisco Palha (1824-1890). Foi ele que em 1866 constituiu uma Sociedade destinada à construção do novo teatro, que viria a ser desenhado pelo arquitecto Miguel Evaristo de Lima Pinto. No Carnaval de 1867 abriu ao público o Salão do Trindade, uma sala de bailes, concertos e conferências anexa ao Teatro e, em 30 de Novembro de 1867 o Teatro da Trindade propriamente dito, numa estreia de gala a que esteve a família real para ver a nata dos actores da época representar um drama (“A Mãe dos Pobres”, de Ernesto Biester) e uma comédia (“O Xerez da Viscondessa”).</p>
-      </div>
-
-      <div class="info3">
-        <img src="img/interior.jpg" alt="fotografia-interior">
-        <p>Hoje, esta sala com uma capacidade para 495 espectadores constitui o mais bem preservado exemplar de teatro à italiana do país, com uma estrutura praticamente virgem de elementos de cimento em ferro, o que lhe permite manter uma acústica única, e uma maquinaria de cena (tablados, teia, máquinas de efeitos especiais) que constitui um património ímpar em termos de arqueologia teatral em Portugal.</p>
-      </div>
     </section>
 
     <section id="condicoes">
-      <h1>Condições</h1>
+
+      <h1>O<span style="color:#d92d2d"> Espaço</span></h1>
+      <div class="interior">
+        <img src="img/interior.jpg" alt="interior-teatro">
+      </div>
 
       <div class="capacidade">
         <img src="img/seat.png" alt="icon-plateia">

@@ -1,0 +1,39 @@
+#historia {
+  height: 700px;
+}
+.info {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 120px;
+  display: flex;
+}
+.info img{
+  width: 30%;
+}
+.info-texto h1, h2{
+  margin-left: 50px;
+  font-size: 4em;
+}
+.info-texto h2{
+  margin-left: 200px;
+}
+.info-texto p{
+  margin-top: 50px;
+  margin-left: 200px;
+  font-size: 18px;
+}
+
+#condicoes{
+  height: 800px;
+}
+#condicoes h1{
+  font-size: 3em;
+  margin-top: 150px;
+  margin-right: 20vw;
+  float: right;
+}
+.interior img{
+  width: 50%;
+  margin-top: 100px;
+  margin-left: 75px;
+}

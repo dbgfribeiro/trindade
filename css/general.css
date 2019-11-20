@@ -10,10 +10,13 @@ nav img{
 .hamburguer {
   position: absolute;
   right: 0;
-  margin-top: 30px;
-  margin-right: 50px;
+  margin-top: 25px;
+  margin-right: 25px;
   z-index: 2 ;
   cursor: pointer;
+  width: 30px;
+  padding-top: 11px;
+  height: 13px;
 }
 input{
   background: #fff;
@@ -22,52 +25,50 @@ input{
 .barra {
   position: fixed;
   display: block;
-  background: #d92d2d;
   width: 30px;
   height: 3px;
   transition: 0.2s ease-in-out;
   border-radius: 200px;
+  background: #d92d2d;
 }
 .barra:before,
 .barra:after {
-  background: #d92d2d;
   content: '';
   display: block;
   width: 100%;
   height: 100%;
+  background: #d92d2d;
   position: absolute;
-  transition: 0.2s ease-in-out;
+  transition: 0.5s ease-in-out;
   border-radius: 200px;
 }
 .barra:before {
-  top: -10px;
+  bottom: 10px;
 }
 .barra:after {
-  bottom: -10px;
+  top: 10px;
 }
 #hamburguer , #menu{
   display: none;
 }
 /*--Rotação das barras para formar uma cruz--*/
-input:checked~label .barra {
+input:checked~div .barra {
   transform: rotate(45deg);
   background: #fff;
 }
-input:checked~label .barra:before {
-  transform: rotate(90deg);
-  top: 0;
-  background: #fff;
-}
-input:checked~label .barra:after {
+input:checked~div .barra:before {
   transform: rotate(90deg);
   bottom: 0;
   background: #fff;
 }
-input:checked~label .menu {
+input:checked~div .barra:after {
+  transform: rotate(90deg);
+  top: 0;
+  background: #fff;
+}
+input:checked~div .menu {
   display: block;
 }
-
-
 
 /*--Desenho do menu--*/
 .menu{
@@ -76,19 +77,40 @@ input:checked~label .menu {
   width: 100vw;
   z-index: 1;
 }
+.tr {
+  display: none;
+  position: absolute;
+  height: 100vh;
+  width: 25vw;
+}
+.tr h2{
+  font-weight: 900;
+  font-size: 300px;
+  margin-top: calc(100vh - 300px);
+  color: transparent;
+  -webkit-text-stroke: 3px black;
+}
+.menu img{
+  display: none;
+  position: absolute;
+  height: 100vh;
+  width: 25vw;
+  margin: 0;
+  top: 0;
+}
 .menu-info {
   float: right;
   background-color: #d92d2d;
-  width: 30vw;
+  width: 25vw;
   height: 100vh;
   right: 0;
   box-shadow: -5px 0px 50px 0px #202020;
 }
 .menu ul{
-  margin-top: 40%;
+  margin-top: 35%;
 }
 .menu li{
-  margin-top: 20px;
+  margin-top: 40px;
   list-style: none;
   text-align: right;
   margin-right: 20px;
@@ -102,23 +124,23 @@ input:checked~label .menu {
   color: #000;
   transition: 0.3s;
 }
-.menu h1{
-  position: absolute;
-  user-select: none;
-  font-weight: 900;
-  font-size: 450px;
-  color: transparent;
-  -webkit-text-stroke: 5px #000;
-  right: 10px;
-  top: 400px;
-}
 .menu-transp{
   position: absolute;
-  width: 70vw;
+  width: 75vw;
   height: 100vh;
   background: rgba(20,20,20,0.8);
 }
-
+@media screen and (max-width: 800px) {
+  .menu a{
+    font-size: 1.5em;
+  }
+  .menu-info{
+    width: 50vw;
+  }
+  .menu-transp{
+    width: 50vw;
+  }
+}
 
 
 

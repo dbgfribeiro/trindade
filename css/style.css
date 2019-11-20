@@ -2,7 +2,7 @@
 
 /*--------------------INTRO---------------------*/
 #intro {
-  background-image: url(../img/intro.jpg);
+  /*background-image: url(../img/intro.jpg);*/
   background-position: center;
   background-size: cover;
   height: 766px;
@@ -34,7 +34,6 @@
   height: 100vh;
 }
 .animacao-intro:hover > .esquerda{
-    transition:0.5s;
   width: 0;
 }
 .animacao-intro:hover > .direita{
@@ -48,7 +47,7 @@
 /*--------------------SAUDAÇÃO---------------------*/
 #saudacao {
   height: 600px;
-  background: #202020;
+  background: #fff;
 }
 #saudacao .linha{
   background-color: #fff;
@@ -75,17 +74,40 @@
   font-weight: 900;
 }
 .texto-saudacao p{
-  color: #fff;
+  color: #000;
   font-size: 1em;
   margin-top: 20px;
   font-weight: lighter;
 }
-
+@media screen and (max-width: 800px) {
+  #saudacao{
+    height: 550px;
+  }
+  .conteudo-saudacao{
+    padding-top: 75px;
+    display:block;
+  }
+  .conteudo-saudacao video {
+    width: 70vw;
+    display: block;
+    margin: 0 auto;
+  }
+  .texto-saudacao{
+    margin-top: 10px;
+  }
+  .texto-saudacao h1{
+    font-size: 1em;
+  }
+  .texto-saudacao p{
+    margin-top: 10px;
+  }
+}
 
 
 /*--------------------ESPETÁCULOS---------------------*/
 #espetaculos{
   height: 700px;
+  background: #202020;
 }
 #espetaculos .linha{
   margin-top: 50px;
@@ -116,14 +138,33 @@
   justify-content: space-around;
 }
 .cartaz{
-  background: #202020;
+  background: #fff;
   padding: 15px 15px 50px 15px;
 }
 .cartaz img{
-  width: 250px;
+  width: 17vw;
 }
 .cartaz p{
-  color: #fff;
+  color: #202020;
+}
+@media screen and (max-width: 800px) {
+  .cartaz img{
+    width: 30vw;
+  }
+  .cartaz:nth-child(2){
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  #espetaculos{
+    height: 600px;
+  }
+  .cartaz img{
+    width: 50vw;
+  }
+  .cartaz:nth-child(3){
+    display: none;
+  }
 }
 
 
@@ -188,4 +229,23 @@ input:focus {
 .submissao input:hover{
   background: #777;
   color: #202020;
+}
+@media screen and (max-width: 500px) {
+  .info-form{
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  .info-form h2{
+    font-size: 1.5em;
+  }
+  form{
+    width: 70vw;
+  }
+  .inserir input{
+    width: 35vw;
+    font-size: 12px;
+  }
+  .submissao input{
+    width: 38vw;
+  }
 }
