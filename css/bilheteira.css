@@ -1,0 +1,172 @@
+#eventos{
+  height: auto;
+  padding-bottom: 15%;
+}
+#eventos h1{
+  padding-top: 25vh;
+  font-size: 3em;
+  margin-left: 10%;
+}
+.evento{
+  display: flex;
+  margin: 5% 20% 0 10%;
+}
+.evento img{
+  width: 30%;
+  height: 30%;
+}
+.informacao{
+  margin-top: 3%;
+  margin-left: 5%;
+}
+.informacao p{
+  margin-top: 2%;
+}
+.opcoes{
+  margin-top: 10%;
+}
+.opcoes a{
+  border: 2px solid #d92d2d;
+  padding: 2%;
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+}
+.opcoes a:last-child{
+  margin-left: 2%;
+}
+.opcoes a:hover{
+  background-color: #d92d2d;
+  color: #fff;
+}
+@media screen and (max-width: 800px) {
+  #eventos h1{
+    padding-top: 15vh;
+    font-size: 2em;
+  }
+  .evento{
+    margin: 10% 5% 0 5%;
+  }
+  .evento img{
+    margin-top: 5%;
+  }
+  .informacao{
+    margin-top: 1%;
+  }
+  .informacao h2{
+    font-size: 1em;
+  }
+  .informacao p{
+    font-size: 12px;
+  }
+  .opcoes {
+    margin-top: 5%;
+  }
+  .opcoes a{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #eventos h1{
+    padding-top: 12vh;
+    margin-left: 5%;
+    font-size: 2em;
+  }
+  .evento img{
+    margin-top: 15%;
+  }
+  .opcoes a{
+    text-align: center;
+    display: block;
+    margin-top: 1vh;
+    width: 35vw;
+    padding: 0;
+  }
+  .opcoes a:last-child{
+    margin-left: 0;
+  }
+}
+
+/*--------------CATEGORIAS----------------*/
+
+#categorias{
+  height: auto;
+  background-color: #d92d2d;
+  padding-bottom: 20%;
+}
+#categorias h1{
+  padding-top: 20%;
+  font-size: 3em;
+  margin-left: 10%;
+}
+.fotografia-interior {
+  margin-top: 7%;
+  text-align: center;
+}
+.fotografia-interior img{
+  width: 60%;
+  box-shadow: 0 0 10px #000000;
+}
+.planta{
+  margin-top: 10%;
+  margin-left: 12%;
+  margin-right: 12%;
+  display: flex;
+  justify-content:space-between;
+}
+.bancada{
+  display: flex;
+  margin-top: 10%;
+}
+.bancada:first-child{
+  margin-top: 30%;
+}
+.bancada p{
+  font-size: 1.5em;
+  color: #fff;
+}
+.quadrado{
+  margin-left: 10px;
+  height: 30px;
+  width: 30px;
+}
+.fotografia-planta{
+  background: #fff;
+  margin-left: 2%;
+  padding: 5% 5% 3% 5%;
+  border-radius: 50px;
+}
+.fotografia-planta img{
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+@media screen and (max-width: 920px) {
+  .planta{
+    display: block;
+  }
+  .bancada{
+    margin-top: 2%;
+  }
+  .bancada p{
+    font-size: 1em;
+  }
+  .quadrado{
+    height:20px;
+    width:20px;
+  }
+  .fotografia-planta{
+    margin-top: 5%;
+    margin-left: 0;
+  }
+  .fotografia-planta img{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #categorias h1{
+    padding-top: 10%;
+    margin-left: 5%;
+    font-size: 2em;
+  }
+}

@@ -48,6 +48,10 @@ aside{
   font-size: 1em;
   font-weight: 300;
 }
+.evento a{
+  text-decoration: none;
+  color: #d92d2d;
+}
 .info {
   margin-top: 5%;
   margin-left: 5%;
