@@ -2,21 +2,20 @@
 
 /*--------------------INTRO---------------------*/
 #intro {
-  /*background-image: url(../img/intro.jpg);*/
+  height: auto;
+  padding-bottom: 120px;
+  background-image: url(../img/fundo.svg);
   background-position: center;
   background-size: cover;
-  height: 766px;
 }
 #intro img {
-  z-index: -1;
-  width: 60%;
-  position: absolute;
-  left:0;
-  right:50px;
-  margin-top: 130px;
-  margin-left:auto;
+  width: 60vw;
+  margin-left:35vw;
+  margin-top: 15vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
 .animacao-intro{
+  display: none;
 }
 .esquerda {
   background-color: #d92d2d;
@@ -39,133 +38,139 @@
 .animacao-intro:hover > .direita{
   width: 0;
 }
-
-
-
-
-
-/*--------------------SAUDAÇÃO---------------------*/
-#saudacao {
-  height: 600px;
-  background: #fff;
-}
-#saudacao .linha{
-  background-color: #fff;
-  content: "";
-  display: inline-block;
-  height: 3px;
-  position: relative;
-  width: 10%;
-}
 .conteudo-saudacao {
   display: flex;
-  padding-top: 100px;
+  margin-top:10vh;
 }
 .conteudo-saudacao video {
-  margin-left: 50px;
-  width: 50vw;
+  margin-left:5vw;
+  width: 45vw;
 }
 .texto-saudacao {
-  margin: 50px;
+  margin: 5vw;
 }
 .texto-saudacao h1{
   font-size: 2em;
-  color: #d92d2d;
+  color: #fff;
   font-weight: 900;
 }
 .texto-saudacao p{
-  color: #000;
-  font-size: 1em;
-  margin-top: 20px;
-  font-weight: lighter;
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 3%;
+  font-weight: 300;
 }
-@media screen and (max-width: 800px) {
-  #saudacao{
-    height: 550px;
-  }
-  .conteudo-saudacao{
-    padding-top: 75px;
-    display:block;
-  }
-  .conteudo-saudacao video {
-    width: 70vw;
-    display: block;
-    margin: 0 auto;
-  }
-  .texto-saudacao{
-    margin-top: 10px;
-  }
-  .texto-saudacao h1{
+@media screen and (max-width: 1000px) {
+  .texto-saudacao p{
     font-size: 1em;
   }
-  .texto-saudacao p{
-    margin-top: 10px;
+}
+@media screen and (max-width: 800px) {
+  #intro {
+    padding-bottom: 50px;
+  }
+  #intro img {
+    width: 75vw;
+    margin-left:20vw;
+  }
+  .conteudo-saudacao {
+    margin-top: 15%;
+    display: block;
+  }
+  .conteudo-saudacao video {
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .texto-saudacao {
+    margin-top: 5%;
   }
 }
 
 
 /*--------------------ESPETÁCULOS---------------------*/
 #espetaculos{
-  height: 700px;
+  padding-bottom: 5%;
   background: #202020;
 }
-#espetaculos .linha{
-  margin-top: 50px;
-  background-color: #d92d2d;
-  content: "";
-  display: inline-block;
-  height: 3px;
-  margin-left: 50px;
-  position: relative;
-  width: 5%;
-}
 #espetaculos h1{
-  margin-left: 50px;
+  padding-top: 5%;
+  color: #fff;
+  margin-left: 5%;
   font-size: 2em;
   font-weight: 900;
 }
-
-#espetaculos a{
-  text-align: center;
-}
-.slider{
-  margin-top: 50px;
+.slider-holder {
+  padding-top: 3%;
+  width: 83vw;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
+  margin-top: 0px;
   text-align: center;
+  overflow: hidden;
+ }
+.image-holder {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  clear: both;
+  position: relative;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
+ }
+.image-holder img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  width: 20vw;
+  margin-right: 6vw;
 }
-.cartaz{
-  background: #fff;
-  padding: 15px 15px 50px 15px;
-}
-.cartaz img{
-  width: 17vw;
+.image-holder a:first-child{
+  margin-left: 6vw;
 }
 .cartaz p{
-  color: #202020;
+  color: #fff;
 }
-@media screen and (max-width: 800px) {
-  .cartaz img{
-    width: 30vw;
+.slider-image {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+ }
+ .button-holder {
+   margin-top: 5%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+ .button-holder a{
+   text-align: center;
+   text-decoration: none;
+   font-size: 2em;
+   color: #fff;
+ }
+ .button-holder a:hover{
+   color:#d92d2d;
+ }
+.button-holder img{
+  width: 1.2em;
+}
+#slider-image-1:target ~ .image-holder{
+   left: 0px;
+}
+#slider-image-2:target ~ .image-holder{
+  left: -79vw;
+}
+@media screen and (max-width: 600px) {
+  .button-holder a{
+    font-size: 1em;
   }
-  .cartaz:nth-child(2){
-    display: none;
+  .button-holder img{
+    width: 0.8em;
   }
 }
-@media screen and (max-width: 500px) {
-  #espetaculos{
-    height: 600px;
-  }
-  .cartaz img{
-    width: 50vw;
-  }
-  .cartaz:nth-child(3){
-    display: none;
-  }
-}
+
+
 
 
 /*--------------------FORM---------------------*/
@@ -175,50 +180,52 @@
   background-position: center;
   background-size: cover;
 }
-form {
-  width: 45vw;
-  height: 55vh;
-  margin-top: 30px;
-  margin-right: 50px;
-  border: 2px solid #fff;
+.formulario{
+  background: #fff;
   float: right;
+  margin-right: 5%;
+  height: 100%;
+  width: 45%;
 }
 .info-form {
-  margin-top: 50px;
-  margin-right: 50px;
+  margin-top: 5%;
+  margin-right: 5%;
   text-align: right;
 }
 .info-form h2{
-  font-size: 2em;
-  color: #fff;
+  font-size: 3em;
+  color: #000;
 }
 .info-form p{
+  font-size: 2em;
   color: #d92d2d;
 }
 input:focus {
   outline: none;
 }
 .inserir{
-  margin-left: 50px;
-  margin-top: 50px;
+  margin-left: 7%;
+  margin-top: 20%;
 }
 .inserir input{
-  width: 25vw;
+  border-radius: 3px;
+  width: 30vw;
   height: 6vh;
   margin-top: 10px;
   font-size: 1em;
   background: transparent;
   padding-left: 10px;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #777;
+  border: 1px solid #777;
 }
 .submissao {
-  margin-top: 20px;
-  margin-left: 50px;
+  margin-left: 7%;
+  margin-top: 2%;
 }
 .submissao input{
-  width: 26vw;
+  border-radius: 3px;
   height: 6vh;
+  width: 31vw;
   font-size: 1em;
   background: transparent;
   padding-left: 10px;
@@ -230,22 +237,7 @@ input:focus {
   background: #777;
   color: #202020;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .info-form{
-    margin-top: 20px;
-    margin-right: 20px;
-  }
-  .info-form h2{
-    font-size: 1.5em;
-  }
-  form{
-    width: 70vw;
-  }
-  .inserir input{
-    width: 35vw;
-    font-size: 12px;
-  }
-  .submissao input{
-    width: 38vw;
   }
 }

@@ -44,54 +44,45 @@
 
 
     <section id="intro">
+      <img src="img/trindade.jpg" alt="">
       <div class="animacao-intro">
         <div class="esquerda"></div>
         <div class="direita"></div>
       </div>
-    </section>
-
-
-    <section id="saudacao">
 
       <div class="conteudo-saudacao">
         <video autoplay loop muted controls>
           <source src="img/150anos.mp4" type="video/mp4">
         </video>
         <div class="texto-saudacao">
-          <span class="linha"></span>
           <h1>Bem-Vindo</h1>
           <p>Ocorre este ano o 150º aniversário da estreia do primeiro espetáculo do Teatro da Trindade, realizado em 1867. O Trindade representou na época, e ainda hoje, representa um referencial de cultura e de espetáculo, cénica e arquitetonicamente enquadrado no modelo de teatro oitocentista que perdura, mas conciliado com sucessivas intervenções, designadamente na tecnologia de cena.</p>
         </div>
       </div>
-
     </section>
 
 
 
     <section id="espetaculos">
-      <span class="linha"></span>
       <h1>Espetáculos</h1>
 
-      <div class="slider">
-
-        <div class="cartaz">
-          <img src="img/poster1.jpg" alt="cartaz-espetaculo">
-          <p>Espetáculo 1</p>
+      <div class="slider-holder">
+        <span id="slider-image-1"></span>
+        <span id="slider-image-2"></span>
+        <div class="image-holder">
+          <a href="agenda.html#chicago"><img src="img/agenda/poster1.jpg" class="slider-image1"/></a>
+          <a href="agenda.html#ornatos"><img src="img/agenda/poster2.jpg" class="slider-image1"/></a>
+          <a href="agenda.html#ptm"><img src="img/agenda/poster3.jpeg" class="slider-image1"/></a>
+          <a href="agenda.html#armstrong"><img src="img/agenda/poster4.jpg" class="slider-image2"/></a>
+          <a href="agenda.html#inimigos"><img src="img/agenda/poster5.jpg" class="slider-image2"/></a>
+          <a href="agenda.html#4emeia"><img src="img/agenda/poster6.jpg" class="slider-image2"/></a>
         </div>
-
-        <div class="cartaz">
-          <img src="img/poster1.jpg" alt="cartaz-espetaculo">
-          <p>Espetáculo 2</p>
+        <div class="button-holder">
+            <a href="#slider-image-1" class="back"><img src='img/back.svg' onmouseover="this.src='img/backR.svg';" onmouseout="this.src='img/back.svg';"></a>
+            <a href="agenda.html"><p>Ver mais</p></a>
+            <a href="#slider-image-2" class="next"><img src='img/next.svg' onmouseover="this.src='img/nextR.svg';" onmouseout="this.src='img/next.svg';"></a>
         </div>
-
-        <div class="cartaz">
-          <img src="img/poster1.jpg" alt="cartaz-espetaculo">
-          <p>Espetáculo 3</p>
-        </div>
-
       </div>
-
-      <a href="agenda.html"><p>Ver mais...</p></a>
 
     </section>
 
