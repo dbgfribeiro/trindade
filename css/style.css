@@ -14,30 +14,6 @@
   margin-top: 15vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
-.animacao-intro{
-  display: none;
-}
-.esquerda {
-  background-color: #d92d2d;
-  transition:0.5s;
-  display: inline-block;
-  width: 50%;
-  height: 100vh;
-}
-.direita {
-  background-color: #000;
-  transition:0.5s;
-  display: inline-block;
-  float: right;
-  width: 50%;
-  height: 100vh;
-}
-.animacao-intro:hover > .esquerda{
-  width: 0;
-}
-.animacao-intro:hover > .direita{
-  width: 0;
-}
 .conteudo-saudacao {
   display: flex;
   margin-top:10vh;
@@ -103,6 +79,7 @@
 .slider-holder {
   padding-top: 3%;
   width: 83vw;
+  overflow: hidden;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
@@ -181,20 +158,19 @@
   background-size: cover;
 }
 .formulario{
-  background: #fff;
   float: right;
   margin-right: 5%;
   height: 100%;
   width: 45%;
 }
 .info-form {
-  margin-top: 5%;
-  margin-right: 5%;
+  float: right;
   text-align: right;
+  margin-top: 10%;
 }
 .info-form h2{
   font-size: 3em;
-  color: #000;
+  color: #fff;
 }
 .info-form p{
   font-size: 2em;
@@ -204,8 +180,8 @@ input:focus {
   outline: none;
 }
 .inserir{
-  margin-left: 7%;
-  margin-top: 20%;
+  margin-left: calc(100% - 31vw);
+  margin-top: 40%;
 }
 .inserir input{
   border-radius: 3px;
@@ -219,7 +195,7 @@ input:focus {
   border: 1px solid #777;
 }
 .submissao {
-  margin-left: 7%;
+  margin-left: calc(100% - 31vw);
   margin-top: 2%;
 }
 .submissao input{
@@ -234,10 +210,48 @@ input:focus {
   cursor: pointer;
 }
 .submissao input:hover{
-  background: #777;
+  background: #d92d2d;
+  border: none;
   color: #202020;
 }
 @media screen and (max-width: 800px) {
-  .info-form{
+  #subscricao{
+    height: 400px;
   }
+  .formulario{
+    width: 60%;
+  }
+  .inserir{
+    margin-top: 35%;
+    margin-left: calc(100% - 41vw);
+  }
+  .submissao{
+    margin-left: calc(100% - 41vw);
+  }
+  .info-form h2{
+    font-size: 2em;
+  }
+  .info-form p{
+    font-size: 1em;
+  }
+  .inserir input{
+    width: 40vw;
+  }
+  .submissao input{
+    width: 42vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  .info-form {
+    margin-top: 20%;
+  }
+  .inserir{
+    margin-top: 60%;
+    margin-left: calc(100% - 45vw);
+  }
+  .submissao{
+    margin-top: 3%;
+    margin-left: calc(100% - 44vw);
+  }
+
 }

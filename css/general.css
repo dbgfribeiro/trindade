@@ -138,28 +138,51 @@ input:checked~div .menu {
 /*--------------------FOOTER---------------------*/
 footer{
   background-color: #202020;
-  height: 200px;
+  height: auto;
+  padding-bottom: 5%;
 }
 .footer-container{
-  display: flex;
   padding-top: 10px;
   margin-left: 20px;
   justify-content: space-between;
 }
+.parceiros{
+  display: flex;
+  justify-content:center;
+}
 .parceiros img{
-  display: block;
-  width: 50%;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 5%;
+  height: 5%;
 }
-.contactos{
-  margin-top: 50px;
+.parceiros img:nth-child(3){
+  margin-top: 5px;
+  width: 3%;
 }
-.contactos p{
-  color: #777;
+.footer-infos{
+  margin: 2% 5% 0 5%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-infos p {
+  font-weight: 300;w
 }
 .social{
-  margin-top: 60px;
+  margin-top: 5px;
 }
 .social img{
-  width: 20%;
-  margin-right: 20px;
+  width: 25%;
+}
+@media screen and (max-width: 800px) {
+  .footer-infos h2 {
+    font-size: 1em;
+  }
+  .footer-infos p {
+    font-size: 0.5em;
+  }
+  .social img{
+    width: 20%;
+  }
 }

@@ -1,17 +1,17 @@
 #historia {
   height: 825px;
 }
-.titulo{
+.titulo-info {
   margin-top: 150px;
   margin-left: 33vw;
   position: absolute;
 }
-.titulo h1, h2{
+.titulo-info h1, h2{
   width: 100%;
   margin-left: 5%;
   font-size: 5vw;
 }
-.titulo h2{
+.titulo-info h2{
   margin-left: 35%;
 }
 .info {
@@ -30,14 +30,14 @@
   font-size: 18px;
 }
 @media screen and (max-width: 800px) {
-  .titulo{
+  .titulo-info {
     margin-top: 250px;
     margin-left: 52vw;
   }
-  .titulo h1, h2{
+  .titulo-info h1, h2{
     font-size: 7vw;
   }
-  .titulo h2{
+  .titulo-info h2{
     margin-left: 4%;
   }
   .info{
