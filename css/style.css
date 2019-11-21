@@ -77,7 +77,7 @@
   font-size: 2em;
   font-weight: 900;
 }
-.slider-holder {
+.container-slider {
   padding-top: 3%;
   width: 83vw;
   overflow: hidden;
@@ -86,64 +86,53 @@
   margin-top: 0px;
   text-align: center;
   overflow: hidden;
- }
-.image-holder {
+}
+.container-imagens {
   display: flex;
   flex-direction: row;
   width: 100%;
   clear: both;
   position: relative;
   -webkit-transition: left 2s;
-  -moz-transition: left 2s;
-  -o-transition: left 2s;
   transition: left 2s;
- }
-.image-holder img{
+}
+.container-imagens img{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   width: 20vw;
   margin-right: 6vw;
 }
-.image-holder a:first-child{
+.container-imagens a:first-child{
   margin-left: 6vw;
 }
-.cartaz p{
+.botoes {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.botoes a{
+  text-align: center;
+  text-decoration: none;
+  font-size: 2em;
   color: #fff;
 }
-.slider-image {
-  float: left;
-  margin: 0px;
-  padding: 0px;
-  position: relative;
- }
- .button-holder {
-   margin-top: 5%;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
+.botoes a:hover{
+  color:#d92d2d;
 }
- .button-holder a{
-   text-align: center;
-   text-decoration: none;
-   font-size: 2em;
-   color: #fff;
- }
- .button-holder a:hover{
-   color:#d92d2d;
- }
-.button-holder img{
+.botoes img{
   width: 1.2em;
 }
-#slider-image-1:target ~ .image-holder{
-   left: 0px;
+#slider-image-1:target ~ .container-imagens{
+  left: 0px;
 }
-#slider-image-2:target ~ .image-holder{
+#slider-image-2:target ~ .container-imagens{
   left: -79vw;
 }
 @media screen and (max-width: 600px) {
-  .button-holder a{
+  .botoes a{
     font-size: 1em;
   }
-  .button-holder img{
+  .botoes img{
     width: 0.8em;
   }
 }

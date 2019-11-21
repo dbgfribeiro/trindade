@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, height=device-height">
-    <link rel="icon" href="img/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/general.css">
-    <title>Teatro da Trindade</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/general.css">
+  <title>Teatro da Trindade</title>
 </head>
+
 <body>
 
   <header>
-
     <nav>
-      <a href="index.html"><img src="img/logoFullB.png" alt="logo-trindade"></a>
 
+      <a href="index.html"><img src="img/logoFullB.png" alt="logo-trindade"></a>
       <input id="hamburguer" type="checkbox" class="check">
+
       <div>
-        <label for="hamburguer" class="hamburguer" id="mostra-menu"><div>
+        <label for="hamburguer" class="hamburguer" id="mostra-menu">
           <span class="barra"></span>
-        </div></label>
+        </label>
+
         <div class="menu">
           <div class="menu-info">
             <ul>
@@ -36,7 +39,6 @@
       </div>
 
     </nav>
-
   </header>
 
 
@@ -44,14 +46,15 @@
 
 
     <section id="intro">
-      <img src="img/trindade.jpg" alt="">
+      <img src="img/trindade.jpg" alt="fotografia-fachada">
       <div class="conteudo-saudacao">
         <video autoplay loop muted controls>
           <source src="img/150anos.mp4" type="video/mp4">
         </video>
         <div class="texto-saudacao">
           <h1>Bem-Vindo</h1>
-          <p>Ocorre este ano o 150º aniversário da estreia do primeiro espetáculo do Teatro da Trindade, realizado em 1867. O Trindade representou na época, e ainda hoje, representa um referencial de cultura e de espetáculo, cénica e arquitetonicamente enquadrado no modelo de teatro oitocentista que perdura, mas conciliado com sucessivas intervenções, designadamente na tecnologia de cena.</p>
+          <p>Ocorre este ano o 150º aniversário da estreia do primeiro espetáculo do Teatro da Trindade, realizado em 1867. O Trindade representou na época, e ainda hoje, representa um referencial de cultura e de espetáculo, cénica e
+            arquitetonicamente enquadrado no modelo de teatro oitocentista que perdura, mas conciliado com sucessivas intervenções, designadamente na tecnologia de cena.</p>
         </div>
       </div>
     </section>
@@ -61,21 +64,23 @@
     <section id="espetaculos">
       <h1>Espetáculos</h1>
 
-      <div class="slider-holder">
-        <span id="slider-image-1"></span>
-        <span id="slider-image-2"></span>
-        <div class="image-holder">
-          <a href="agenda.html#chicago"><img src="img/agenda/poster1.jpg"/></a>
-          <a href="agenda.html#ornatos"><img src="img/agenda/poster2.jpg"/></a>
-          <a href="agenda.html#ptm"><img src="img/agenda/poster3.jpeg"/></a>
-          <a href="agenda.html#armstrong"><img src="img/agenda/poster4.jpg"/></a>
-          <a href="agenda.html#inimigos"><img src="img/agenda/poster5.jpg"/></a>
-          <a href="agenda.html#4emeia"><img src="img/agenda/poster6.jpg"/></a>
+      <div class="container-slider">
+        <span id="slider-imagens-1"></span>
+        <span id="slider-imagens-2"></span>
+        <div class="container-imagens">
+          <a href="agenda.html#chicago"><img src="img/agenda/poster1.jpg" alt="poster-chicago" /></a>
+          <a href="agenda.html#ornatos"><img src="img/agenda/poster2.jpg" alt="poster-ornatos" /></a>
+          <a href="agenda.html#ptm"><img src="img/agenda/poster3.jpeg" alt="poster-ptm" /></a>
+          <a href="agenda.html#armstrong"><img src="img/agenda/poster4.jpg" alt="poster-armstrong" /></a>
+          <a href="agenda.html#inimigos"><img src="img/agenda/poster5.jp" alt="poster-inimigos" /></a>
+          <a href="agenda.html#4emeia"><img src="img/agenda/poster6.jpg" alt="poster-4emeia" /></a>
         </div>
-        <div class="button-holder">
-            <a href="#slider-image-1" class="back"><img src='img/back.svg' onmouseover="this.src='img/backR.svg';" onmouseout="this.src='img/back.svg';"></a>
-            <a href="agenda.html"><p>Ver mais</p></a>
-            <a href="#slider-image-2" class="next"><img src='img/next.svg' onmouseover="this.src='img/nextR.svg';" onmouseout="this.src='img/next.svg';"></a>
+        <div class="botoes">
+          <a href="#slider-imagens-1" class="back"><img src='img/back.svg' onmouseover="this.src='img/backR.svg';" onmouseout="this.src='img/back.svg';" alt="seta-back"></a>
+          <a href="agenda.html">
+            <p>Ver mais</p>
+          </a>
+          <a href="#slider-imagens-2" class="next"><img src='img/next.svg' onmouseover="this.src='img/nextR.svg';" onmouseout="this.src='img/next.svg';" alt="seta-next"></a>
         </div>
       </div>
 
@@ -107,43 +112,44 @@
 
   <footer>
 
-      <div class="footer-container">
-          <div class="parceiros">
-              <img src="img/inatelW.png" alt="logo-inatel">
-              <img src="img/meoW.png" alt="logo-meo">
-              <img src="img/publicoW.png" alt="logo-publico">
-          </div>
+    <div class="footer-container">
+      <div class="parceiros">
+        <img src="img/inatelW.png" alt="logo-inatel">
+        <img src="img/meoW.png" alt="logo-meo">
+        <img src="img/publicoW.png" alt="logo-publico">
+      </div>
 
-          <div class="footer-infos">
+      <div class="footer-infos">
 
-            <div class="contactos">
-              <h2>Contactos</h2>
-              <p>teatro.trindade@inatel.pt</p>
-              <p>213420000</p>
-            </div>
+        <div class="contactos">
+          <h2>Contactos</h2>
+          <p>teatro.trindade@inatel.pt</p>
+          <p>213420000</p>
+        </div>
 
-            <div class="bilhetes">
-              <h2>Bilhetes</h2>
-              <p>teatro.trindade@inatel.pt</p>
-              <a href="https://www.bol.pt/Projecto/EntidadesAderentes/4134-teatro_da_trindade_inatel" target="_blank">teatrodatrindade-inatel.bol.pt</a>
-            </div>
+        <div class="bilhetes">
+          <h2>Bilhetes</h2>
+          <p>teatro.trindade@inatel.pt</p>
+          <a href="https://www.bol.pt/Projecto/EntidadesAderentes/4134-teatro_da_trindade_inatel" target="_blank">teatrodatrindade-inatel.bol.pt</a>
+        </div>
 
-            <div class="morada">
-              <h2>Morada</h2>
-              <p>R. Nova da Trindade 9,<br>1200-301 Lisboa</p>
-            </div>
+        <div class="morada">
+          <h2>Morada</h2>
+          <p>R. Nova da Trindade 9,<br>1200-301 Lisboa</p>
+        </div>
 
-            <div class="social">
-                <a href="https://www.facebook.com/TeatrodaTrindade/" target="_blank"><img src="img/facebook.svg" alt="icon-facebook"></a>
-                <a href="https://www.instagram.com/teatrodatrindade/" target="_blank"><img src="img/instagram.svg" alt="icon-instagram"></a>
-                <a href="https://twitter.com/inateloficial" target="_blank"><img src="img/twitter.svg" alt="icon-twitter"></a>
-            </div>
-
-          </div>
+        <div class="social">
+          <a href="https://www.facebook.com/TeatrodaTrindade/" target="_blank"><img src="img/facebook.svg" alt="icon-facebook"></a>
+          <a href="https://www.instagram.com/teatrodatrindade/" target="_blank"><img src="img/instagram.svg" alt="icon-instagram"></a>
+          <a href="https://twitter.com/inateloficial" target="_blank"><img src="img/twitter.svg" alt="icon-twitter"></a>
+        </div>
 
       </div>
+
+    </div>
 
   </footer>
 
 </body>
+
 </html>

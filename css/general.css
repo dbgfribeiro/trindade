@@ -1,28 +1,33 @@
-*{
+* {
   margin: 0;
   font-family: 'Lato', sans-serif;
 }
-nav img{
+
+nav img {
   position: absolute;
   width: 15%;
   margin: 20px 20px;
 }
+
 .hamburguer {
   position: absolute;
   right: 0;
   margin-top: 25px;
   margin-right: 25px;
-  z-index: 2 ;
+  z-index: 2;
   width: 30px;
   padding-top: 11px;
   height: 13px;
 }
-input{
+
+input {
   background: #fff;
 }
-label{
+
+label {
   cursor: pointer;
 }
+
 /*---Desenha as 3 barras do hamburguer---*/
 .barra {
   position: fixed;
@@ -34,6 +39,7 @@ label{
   border-radius: 200px;
   background: #d92d2d;
 }
+
 .barra:before,
 .barra:after {
   content: '';
@@ -46,44 +52,52 @@ label{
   transition: 0.5s ease-in-out;
   border-radius: 200px;
 }
+
 .barra:before {
   bottom: 10px;
 }
+
 .barra:after {
   top: 10px;
 }
-#hamburguer , #menu{
+
+#hamburguer, #menu {
   display: none;
 }
+
 /*--Rotação das barras para formar uma cruz--*/
 input:checked~div .barra {
   transform: rotate(45deg);
-  box-shadow:none;
+  box-shadow: none;
   background: #fff;
 }
+
 input:checked~div .barra:before {
   transform: rotate(90deg);
   bottom: 0;
-  box-shadow:none;
+  box-shadow: none;
   background: #fff;
 }
+
 input:checked~div .barra:after {
   transform: rotate(90deg);
   top: 0;
-  box-shadow:none;
+  box-shadow: none;
   background: #fff;
 }
+
 input:checked~div .menu {
   display: block;
 }
 
 /*--Desenho do menu--*/
-.menu{
+.menu {
   display: none;
   position: fixed;
   width: 100vw;
   z-index: 1;
 }
+
 .menu-info {
   float: right;
   background-color: #d92d2d;
@@ -92,110 +106,128 @@ input:checked~div .menu {
   right: 0;
   box-shadow: -5px 0px 50px 0px #202020;
 }
-.menu-info ul{
+
+.menu-info ul {
   margin-top: 35%;
 }
-.menu-info li{
+
+.menu-info li {
   margin-top: 40px;
   list-style: none;
   text-align: right;
   margin-right: 20px;
 }
+
 .menu-info a {
   font-size: 3em;
   text-decoration: none;
   -webkit-user-select: none;
   color: #fff;
 }
-.menu-info a:hover{
+
+.menu-info a:hover {
   color: #000;
   transition: 0.3s;
 }
-.menu-info img{
+
+.menu-info img {
   position: absolute;
   width: 25vw;
   margin: 0;
   bottom: 0;
 }
-.menu-transp{
+
+.menu-transp {
   position: absolute;
   width: 75vw;
   height: 100vh;
-  background: rgba(20,20,20,0.8);
+  background: rgba(20, 20, 20, 0.8);
 }
+
 @media screen and (max-width: 800px) {
-  .menu a{
+  .menu a {
     font-size: 1.5em;
   }
-  .menu-info{
+
+  .menu-info {
     width: 50vw;
   }
-  .menu-transp{
+
+  .menu-transp {
     width: 50vw;
   }
-  .menu img{
+
+  .menu img {
     width: 55vw;
   }
 }
 
-
-
 /*--------------------FOOTER---------------------*/
-footer{
+footer {
   background-color: #202020;
   height: auto;
   padding-bottom: 5%;
 }
-.footer-container{
+
+.footer-container {
   padding-top: 10px;
 }
-.parceiros{
+
+.parceiros {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
-.parceiros img{
+
+.parceiros img {
   margin-left: 2%;
   margin-right: 2%;
   width: 5%;
   height: 5%;
 }
-.parceiros img:nth-child(3){
+
+.parceiros img:nth-child(3) {
   margin-top: 5px;
   width: 3%;
 }
-.footer-infos{
+
+.footer-infos {
   color: #fff;
   display: flex;
   justify-content: space-between;
 }
+
 .footer-infos p {
   font-weight: 300;
 }
-.footer-infos a{
-  text-decoration:  none;
+
+.footer-infos a {
+  text-decoration: none;
   font-weight: 300;
   color: #fff;
 }
-.social{
+
+.social {
   display: block;
 }
-.social img{
+
+.social img {
   width: 10%;
 }
-
-
 
 @media screen and (max-width: 800px) {
   .footer-infos h2 {
     font-size: 1em;
   }
+
   .footer-infos p {
     font-size: 0.5em;
   }
+
   .footer-infos a {
     font-size: 0.5em;
   }
-  .social img{
+
+  .social img {
     width: 20%;
   }
 }

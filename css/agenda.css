@@ -1,17 +1,20 @@
-#agenda{
+#agenda {
   height: auto;
   padding-top: 75px;
   background: #202020;
-  padding-bottom: 400px;
+  padding-bottom: 200px;
 }
-aside{
+
+aside {
   float: right;
 }
+
 .mes {
   display: flex;
   flex-direction: row;
 }
-.mes_label{
+
+.mes_label {
   position: -webkit-sticky;
   position: sticky;
   top: 4rem;
@@ -21,43 +24,52 @@ aside{
   top: 20%;
   margin-right: 41%;
 }
-.mes_label h3{
+
+.mes_label h3 {
   margin-right: 15px;
 }
-.linha{
+
+.linha {
   color: #fff;
-  border-left: 2px solid #fff;;
+  border-left: 2px solid #fff;
+  ;
   height: 150vh;
   margin-left: 85px;
   margin-right: 75px;
   height: 100%;
 }
-.evento{
+
+.evento {
   display: flex;
   color: #fff;
   margin-left: 5%;
   margin-right: 10%;
   margin-top: 10%;
 }
-.evento h1{
+
+.evento h1 {
   color: #d92d2d;
   margin-top: 20%;
   font-size: 7vw;
 }
-.evento p{
+
+.evento p {
   font-size: 1em;
   font-weight: 300;
 }
-.evento a{
+
+.evento a {
   text-decoration: none;
   color: #d92d2d;
 }
+
 .info {
   margin-top: 5%;
   margin-left: 5%;
   width: 50%;
 }
-.cartaz img{
+
+.cartaz img {
   width: 100%;
   margin-left: 20%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
@@ -68,16 +80,20 @@ aside{
     margin-top: 75px;
     display: block;
   }
-  .evento h1{
+
+  .evento h1 {
     margin-left: 5%;
   }
-  .evento p{
+
+  .evento p {
     font-size: 14px;
   }
-  .info{
+
+  .info {
     width: 100%;
   }
-  .cartaz img{
+
+  .cartaz img {
     margin-top: 5%;
     margin-left: 5%;
   }

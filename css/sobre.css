@@ -3,100 +3,116 @@
   background-image: url(../img/fundo-sobre.svg);
   background-size: cover;
 }
+
 .titulo-info {
   margin-top: 150px;
   margin-left: 33vw;
   position: absolute;
 }
-.titulo-info h1, h2{
+
+.titulo-info h1, h2 {
   width: 100%;
   margin-left: 5%;
   font-size: 5vw;
 }
-.titulo-info h2{
+
+.titulo-info h2 {
   margin-left: 35%;
 }
+
 .info {
   margin-left: 5%;
   margin-right: 5%;
   padding-top: 150px;
   display: flex;
 }
-.info img{
+
+.info img {
   width: 30%;
   height: 30%;
 }
-.info p{
+
+.info p {
   margin-top: 15%;
   margin-left: 13%;
   font-size: 18px;
 }
+
 @media screen and (max-width: 800px) {
-  #historia{
+  #historia {
     height: 700px;
     background-image: none;
   }
+
   .titulo-info {
     margin-top: 250px;
     margin-left: 52vw;
   }
-  .titulo-info h1, h2{
+
+  .titulo-info h1, h2 {
     font-size: 7vw;
   }
-  .titulo-info h2{
+
+  .titulo-info h2 {
     margin-left: 4%;
   }
-  .info{
+
+  .info {
     padding-top: 100px;
     display: block;
   }
-  .info img{
+
+  .info img {
     width: 50%;
   }
-  .info p{
+
+  .info p {
     margin-top: 5%;
     font-size: 12px;
     margin-left: 0;
   }
 }
 
-
-
 /*----------------CONDIÇÕES-----------------*/
-
-#condicoes{
+#condicoes {
   height: 700px;
   background-image: url(../img/fundo-condicoes.svg);
   background-size: cover;
   background-position: bottom;
 }
-#condicoes h1{
+
+#condicoes h1 {
   font-size: 3em;
   margin-top: 10vh;
   margin-right: 20vw;
   float: right;
 }
-.capacidade{
+
+.capacidade {
   position: relative;
   margin-top: 10vh;
   margin-left: 5vw;
   width: 50vw;
 }
-.interior img{
+
+.interior img {
   z-index: -1;
   width: 100%;
   opacity: 0.6;
   position: absolute;
 }
+
 .total {
   position: absolute;
   text-align: center;
   margin-top: 18%;
   margin-left: 15%;
 }
-.total img{
+
+.total img {
   width: 10vw;
 }
+
 .lugares {
   position: absolute;
   margin-top: 15vh;
@@ -104,22 +120,26 @@
   margin-right: 5vh;
   margin-left: 33vw;
 }
-.lugares img{
+
+.lugares img {
   width: 6vw;
 }
+
 @media screen and (max-width: 800px) {
-  #condicoes h1{
+  #condicoes h1 {
     margin-top: -10vh;
     float: left;
     margin-left: 5vw;
     margin-right: 0vw;
     font-size: 2em;
   }
-  .capacidade{
+
+  .capacidade {
     display: flex;
     width: 80vw;
   }
-  .capacidade p{
+
+  .capacidade p {
     font-size: 12px;
   }
 }
