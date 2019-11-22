@@ -2,7 +2,7 @@
   height: auto;
   padding-top: 75px;
   background: #202020;
-  padding-bottom: 200px;
+  padding-bottom: 15%
 }
 
 aside {
@@ -14,28 +14,26 @@ aside {
   flex-direction: row;
 }
 
-.mes_label {
-  position: -webkit-sticky;
+.sticky-mes {
   position: sticky;
   top: 4rem;
   font-size: 2em;
   color: #d92d2d;
   text-align: right;
-  top: 20%;
-  margin-right: 41%;
+  top: 20vh;
+  margin-right: 4.4vw;
 }
 
-.mes_label h3 {
+.sticky-mes h3 {
   margin-right: 15px;
 }
 
 .linha {
   color: #fff;
   border-left: 2px solid #fff;
-  ;
   height: 150vh;
   margin-left: 85px;
-  margin-right: 75px;
+  margin-right: 5vw;
   height: 100%;
 }
 
@@ -78,7 +76,17 @@ aside {
 @media screen and (max-width: 900px) {
   .evento {
     margin-top: 75px;
+    margin-right: 0;
     display: block;
+  }
+
+  .sticky-mes {
+    margin-right: 11%;
+    font-size: 1.5em;
+  }
+
+  .linha {
+    margin-right: 18px;
   }
 
   .evento h1 {

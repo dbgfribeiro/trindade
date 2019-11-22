@@ -1,5 +1,3 @@
-
-
 /*--------------------INTRO---------------------*/
 #intro {
   height: auto;
@@ -8,75 +6,87 @@
   background-position: center;
   background-size: cover;
 }
+
 #intro img {
   width: 60vw;
-  margin-left:35vw;
+  margin-left: 35vw;
   margin-top: 15vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
+
 .conteudo-saudacao {
   display: flex;
-  margin-top:10vh;
+  margin-top: 10vh;
 }
+
 .conteudo-saudacao video {
-  margin-left:5vw;
-  padding: 0;
+  margin-left: 5vw;
   width: 45vw;
 }
+
 .texto-saudacao {
   margin: 5vw;
 }
-.texto-saudacao h1{
+
+.texto-saudacao h1 {
   font-size: 2em;
   color: #fff;
   font-weight: 900;
 }
-.texto-saudacao p{
+
+.texto-saudacao p {
   color: #fff;
   font-size: 1.5em;
   margin-top: 3%;
   font-weight: 300;
 }
+
 @media screen and (max-width: 1000px) {
-  .texto-saudacao p{
+  .texto-saudacao p {
     font-size: 1em;
   }
 }
+
 @media screen and (max-width: 800px) {
   #intro {
     padding-bottom: 50px;
   }
+
   #intro img {
     width: 75vw;
-    margin-left:20vw;
+    margin-left: 20vw;
   }
+
   .conteudo-saudacao {
     margin-top: 15%;
     display: block;
   }
+
   .conteudo-saudacao video {
     width: 90vw;
     margin-left: 5vw;
     margin-right: 5vw;
   }
+
   .texto-saudacao {
     margin-top: 5%;
   }
 }
 
-
 /*--------------------ESPETÁCULOS---------------------*/
-#espetaculos{
+#espetaculos {
   padding-bottom: 5%;
   background: #202020;
 }
-#espetaculos h1{
+
+#espetaculos h1 {
   padding-top: 5%;
   color: #fff;
   margin-left: 5%;
   font-size: 2em;
   font-weight: 900;
 }
+
 .container-slider {
   padding-top: 3%;
   width: 83vw;
@@ -87,58 +97,97 @@
   text-align: center;
   overflow: hidden;
 }
+
 .container-imagens {
   display: flex;
   flex-direction: row;
   width: 100%;
   clear: both;
   position: relative;
-  -webkit-transition: left 2s;
   transition: left 2s;
 }
-.container-imagens img{
+
+.container-imagens img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   width: 20vw;
   margin-right: 6vw;
 }
-.container-imagens a:first-child{
+
+.container-imagens a:first-child {
   margin-left: 6vw;
 }
-.botoes {
+
+.cartaz p {
+  color: #fff;
+}
+
+.controlos {
   margin-top: 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.botoes a{
+
+.controlos a {
   text-align: center;
   text-decoration: none;
   font-size: 2em;
   color: #fff;
 }
-.botoes a:hover{
-  color:#d92d2d;
+
+.controlos a:hover {
+  color: #d92d2d;
 }
-.botoes img{
+
+.controlos img {
   width: 1.2em;
 }
-#slider-image-1:target ~ .container-imagens{
+
+.back img:nth-child(2) {
+  display: none;
+}
+
+.back:hover>img:first-child {
+  display: none;
+}
+
+.back:hover>img:nth-child(2) {
+  display: block;
+}
+
+.next img:nth-child(2) {
+  display: none;
+}
+
+.next:hover>img:first-child {
+  display: none;
+}
+
+.next:hover>img:nth-child(2) {
+  display: block;
+}
+
+#slider-imagens-1, #slider-imagens-2 {
+  display: none;
+}
+
+#slider-imagens-1:target~.container-imagens {
   left: 0px;
 }
-#slider-image-2:target ~ .container-imagens{
+
+#slider-imagens-2:target~.container-imagens {
   left: -79vw;
 }
+
 @media screen and (max-width: 600px) {
-  .botoes a{
+  .controlos a {
     font-size: 1em;
   }
-  .botoes img{
+
+  .controlos img {
     width: 0.8em;
   }
 }
-
-
-
 
 /*--------------------FORM---------------------*/
 #subscricao {
@@ -147,33 +196,40 @@
   background-position: center;
   background-size: cover;
 }
-.formulario{
+
+.formulario {
   float: right;
   margin-right: 5%;
   height: 100%;
   width: 45%;
 }
+
 .info-form {
   float: right;
   text-align: right;
   margin-top: 10%;
 }
-.info-form h2{
+
+.info-form h2 {
   font-size: 3em;
   color: #fff;
 }
-.info-form p{
+
+.info-form p {
   font-size: 2em;
   color: #d92d2d;
 }
+
 input:focus {
   outline: none;
 }
-.inserir{
+
+.inserir {
   margin-left: calc(100% - 31vw);
   margin-top: 40%;
 }
-.inserir input{
+
+.inserir input {
   border-radius: 3px;
   width: 30vw;
   height: 6vh;
@@ -184,11 +240,13 @@ input:focus {
   color: #777;
   border: 1px solid #777;
 }
+
 .submissao {
   margin-left: calc(100% - 31vw);
   margin-top: 2%;
 }
-.submissao input{
+
+.submissao input {
   border-radius: 3px;
   height: 6vh;
   width: 31vw;
@@ -199,49 +257,60 @@ input:focus {
   border: 1px solid #777;
   cursor: pointer;
 }
-.submissao input:hover{
+
+.submissao input:hover {
   background: #d92d2d;
   border: none;
   color: #202020;
 }
+
 @media screen and (max-width: 800px) {
-  #subscricao{
+  #subscricao {
     height: 400px;
   }
-  .formulario{
+
+  .formulario {
     width: 60%;
   }
-  .inserir{
+
+  .inserir {
     margin-top: 35%;
     margin-left: calc(100% - 41vw);
   }
-  .submissao{
+
+  .submissao {
     margin-left: calc(100% - 41vw);
   }
-  .info-form h2{
+
+  .info-form h2 {
     font-size: 2em;
   }
-  .info-form p{
+
+  .info-form p {
     font-size: 1em;
   }
-  .inserir input{
+
+  .inserir input {
     width: 40vw;
   }
-  .submissao input{
+
+  .submissao input {
     width: 42vw;
   }
 }
+
 @media screen and (max-width: 400px) {
   .info-form {
-    margin-top: 20%;
+    margin-top: 30%;
   }
-  .inserir{
-    margin-top: 60%;
+
+  .inserir {
+    margin-top: 70%;
     margin-left: calc(100% - 45vw);
   }
-  .submissao{
+
+  .submissao {
     margin-top: 3%;
     margin-left: calc(100% - 44vw);
   }
-
 }
