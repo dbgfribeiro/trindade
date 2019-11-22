@@ -23,7 +23,9 @@
   margin-left: 5vw;
   width: 45vw;
 }
-
+.conteudo-saudacao video:focus {
+  outline: none;
+}
 .texto-saudacao {
   margin: 5vw;
 }
