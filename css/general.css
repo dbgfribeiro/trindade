@@ -14,7 +14,6 @@ nav img {
   right: 0;
   margin-top: 25px;
   margin-right: 25px;
-  z-index: 2;
   width: 30px;
   padding-top: 11px;
   height: 13px;
@@ -34,7 +33,7 @@ label {
   transition: 1s ease-in-out;
   border-radius: 200px;
   background: #d92d2d;
-  opacity: 0;
+  z-index: 2;
 }
 
 .barra:before,

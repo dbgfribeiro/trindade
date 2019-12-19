@@ -1,12 +1,18 @@
+/*-------------ANIMAÇÃO INTRO-------------*/
+
+var cortinaEsquerda = document.getElementById('esquerda');
+var cortinaDireita = document.getElementById('direita');
+
 window.onload = function() {
-  document.getElementById('esquerda').style.marginLeft = "-50vw";
-  document.getElementById('direita').style.marginLeft = "100vw";
+  cortinaEsquerda.style.marginLeft = "-50vw";
+  cortinaDireita.style.left = "100vw";
 
-  document.getElementById('fundo-cortinas').style.opacity = "0";
-
-  document.getElementById('barra').style.opacity = "1";
+  document.getElementById('fundo-cortinas').style.display = "none";
 }
 
+
+
+/*-------------SLIDER-------------*/
 
 var cOne = document.getElementById('cartazes-container-one');
 var cTwo = document.getElementById('cartazes-container-two');
@@ -26,7 +32,6 @@ function next() {
       mOne.style.opacity = "0";
     }
 }
-
 
 function back() {
   cOne.style.marginLeft= "14vw";

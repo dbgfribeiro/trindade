@@ -100,8 +100,9 @@
       </div>
 
       <div class="controls">
-        <img onclick="back()" src='img/backR.svg' onmouseover="this.src='img/back.svg';" onmouseout="this.src='img/backR.svg';" />
-        <img onclick="next()" src='img/nextR.svg' onmouseover="this.src='img/next.svg';" onmouseout="this.src='img/nextR.svg';" />
+        <img onclick="back()" src='img/back.svg' onmouseover="this.src='img/backR.svg';" onmouseout="this.src='img/back.svg';" />
+        <a href="agenda.html">Ver mais</a>
+        <img onclick="next()" src='img/next.svg' onmouseover="this.src='img/nextR.svg';" onmouseout="this.src='img/next.svg';" />
       </div>
 
     </section>
@@ -110,18 +111,12 @@
 
     <section id="subscricao">
 
-      <form class="formulario">
-        <div class="info-form">
-          <h2>Subscreve</h2>
-          <p>Notícias Teatro da Trindade</p>
-        </div>
-        <div class="inserir">
+      <form class="formulario" method="POST" action="submissao.php">
           <input type="text" name="nome" placeholder="Nome">
+        <br>
           <input type="email" name="email" placeholder="Endereço de e-mail">
-        </div>
-        <div class="submissao">
-          <input type="button" name="subscrever" value="Submeter">
-        </div>
+        <br>
+          <input type="submit" name="subscrever" value="Submeter">
       </form>
     </section>
 
