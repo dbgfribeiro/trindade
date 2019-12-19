@@ -31,9 +31,10 @@ label {
   width: 30px;
   height: 3px;
   box-shadow: 0px 0px 3px 0px #1f1f1f;
-  transition: 0.2s ease-in-out;
+  transition: 1s ease-in-out;
   border-radius: 200px;
   background: #d92d2d;
+  opacity: 0;
 }
 
 .barra:before,
@@ -102,6 +103,7 @@ input:checked~div .menu {
   user-select: none;
   right: 0;
   box-shadow: -5px 0px 50px 0px #202020;
+  position: absolute;
 }
 
 .menu-info ul {

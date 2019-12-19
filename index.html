@@ -20,7 +20,7 @@
       <input id="hamburguer" type="checkbox">
       <div>
         <label for="hamburguer" class="hamburguer" id="mostra-menu">
-          <span class="barra"></span>
+          <span class="barra" id="barra"></span>
         </label>
 
         <div class="menu">
@@ -40,15 +40,22 @@
     </nav>
   </header>
 
-
   <main>
 
 
     <section id="intro">
-      <img src="img/trindade.jpg" alt="fotografia-fachada">
+      <div id="fundo-cortinas"></div>
+      <div class="abertura-img">
+        <img src="img/curt_left.jpg" alt="cortina-lado-esquerdo" id="esquerda">
+        <img src="img/curt_right.jpg" alt="cortina-lado-direito" id="direita">
+      </div>
+      <div class="intro-img">
+        <img src="img/trindade.jpg" alt="fotografia-fachada">
+      </div>
       <div class="conteudo-saudacao">
         <video autoplay loop muted controls>
           <source src="img/150anos.mp4" type="video/mp4">
+          <source src="img/150anos.ogg" type="video/ogg">
         </video>
         <div class="texto-saudacao">
           <h1>Bem-Vindo</h1>
@@ -56,6 +63,7 @@
             arquitetonicamente enquadrado no modelo de teatro oitocentista que perdura, mas conciliado com sucessivas intervenções, designadamente na tecnologia de cena.</p>
         </div>
       </div>
+
     </section>
 
 
@@ -63,30 +71,37 @@
     <section id="espetaculos">
       <h1>Espetáculos</h1>
 
-      <div class="container-slider">
-        <span id="slider-imagens-1"></span>
-        <span id="slider-imagens-2"></span>
-        <div class="container-imagens">
+      <div class="slider-container d-slider">
+        <div class="cartazes-container" id="cartazes-container-one">
           <a href="agenda.html#chicago"><img src="img/agenda/poster1.jpg" alt="poster-chicago" /></a>
           <a href="agenda.html#ornatos"><img src="img/agenda/poster2.jpg" alt="poster-ornatos" /></a>
           <a href="agenda.html#ptm"><img src="img/agenda/poster3.jpeg" alt="poster-ptm" /></a>
+        </div>
+        <div class="cartazes-container" id="cartazes-container-two">
           <a href="agenda.html#armstrong"><img src="img/agenda/poster4.jpg" alt="poster-armstrong" /></a>
           <a href="agenda.html#inimigos"><img src="img/agenda/poster5.jpg" alt="poster-inimigos" /></a>
           <a href="agenda.html#4emeia"><img src="img/agenda/poster6.jpg" alt="poster-4emeia" /></a>
         </div>
-        <div class="controlos">
-          <a href="#slider-imagens-1" class="back">
-            <img src='img/back.svg' alt="seta-esquerda-branca">
-            <img src='img/backR.svg' alt="seta-esquerda-vermelha">
-          </a>
-          <a href="agenda.html">
-            <p>Ver mais</p>
-          </a>
-          <a href="#slider-imagens-2" class="next">
-            <img src='img/next.svg' alt="seta-direita-branca">
-            <img src='img/nextR.svg' alt="seta-direita-vermelha">
-          </a>
+      </div>
+
+      <div class="slider-container m-slider">
+        <div class="m-cartazes-container" id="m-cartazes-container-one">
+          <a href="agenda.html#chicago"><img src="img/agenda/poster1.jpg" alt="poster-chicago" /></a>
+          <a href="agenda.html#ornatos"><img src="img/agenda/poster2.jpg" alt="poster-ornatos" /></a>
         </div>
+        <div class="m-cartazes-container" id="m-cartazes-container-two">
+          <a href="agenda.html#ptm"><img src="img/agenda/poster3.jpeg" alt="poster-ptm" /></a>
+          <a href="agenda.html#armstrong"><img src="img/agenda/poster4.jpg" alt="poster-armstrong" /></a>
+        </div>
+        <div class="m-cartazes-container" id="m-cartazes-container-three">
+          <a href="agenda.html#inimigos"><img src="img/agenda/poster5.jpg" alt="poster-inimigos" /></a>
+          <a href="agenda.html#4emeia"><img src="img/agenda/poster6.jpg" alt="poster-4emeia" /></a>
+        </div>
+      </div>
+
+      <div class="controls">
+        <img onclick="back()" src='img/backR.svg' onmouseover="this.src='img/back.svg';" onmouseout="this.src='img/backR.svg';" />
+        <img onclick="next()" src='img/nextR.svg' onmouseover="this.src='img/next.svg';" onmouseout="this.src='img/nextR.svg';" />
       </div>
 
     </section>
@@ -160,7 +175,7 @@
     </div>
 
   </footer>
-
+  <script src="js/myScript.js"></script>
 </body>
 
 </html>
