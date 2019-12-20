@@ -31,6 +31,10 @@ payInfo.appendChild(descricao);
 var poster = document.createElement("img");
 payInfo.appendChild(poster);
 
+var escolher = document.createElement("select");
+escolher.setAttribute('name' , 'event');
+
+
 if (chicagoC.addEventListener) { chicagoC.addEventListener("click", function() {
   title.innerText = evento.titulos[0];
   descricao.innerText = "Escolha o lugar que pretende para assistir ao espetáculo '" + evento.titulos[0] + "'.";
@@ -59,9 +63,13 @@ if (armstrongC.addEventListener) { armstrongC.addEventListener("click", function
 
 /*------------FORM-COMPRA-------------*/
 var listaPrecos = document.createElement("form");
+listaPrecos.setAttribute('method' , 'POST');
+listaPrecos.setAttribute('action' , 'comprar.php');
+
 
 for (var i = 0; i < evento.lugares.length; i++) {
   var lugar = evento.lugares[i];
+
 
   var precoVal = document.createElement("label");
   var pPreco = document.createElement("p");
@@ -74,6 +82,8 @@ for (var i = 0; i < evento.lugares.length; i++) {
 
   var preco = document.createElement("input");
   preco.setAttribute('type','checkbox');
+  preco.setAttribute('name' , 'check');
+  preco.setAttribute('value' , +i);
 
 
   listaPrecos.appendChild(precoVal);
@@ -83,16 +93,35 @@ for (var i = 0; i < evento.lugares.length; i++) {
 payInfo.appendChild(listaPrecos);
 
 
+for (var j = 0; j < evento.titulos.length; j++) {
+  var espetaculo = evento.titulos[j];
+
+  var opcoes = document.createElement("option");
+  opcoes.innerText = espetaculo;
+
+  escolher.appendChild(opcoes);
+  opcoes.setAttribute('value' , +j);
+}
+listaPrecos.appendChild(escolher);
+var escolherAviso = document.createElement('h3');
+escolherAviso.innerText = "Confirmar o espetáculo que pretende";
+listaPrecos.appendChild(escolherAviso);
+
 var quanti = document.createElement("input");
 quanti.setAttribute('class',"quant");
 quanti.setAttribute('type','number');
 quanti.setAttribute('value',"1");
 quanti.setAttribute('min',"1");
 quanti.setAttribute('max',"20");
+quanti.setAttribute('name' , 'quant');
 
-var check = document.createElement("input");
-check.setAttribute('type','submit');
-check.setAttribute('class','submeter');
+
+var confirm = document.createElement("input");
+confirm.setAttribute('type','submit');
+confirm.setAttribute('class','submeter');
+confirm.setAttribute('name','comprar');
+confirm.setAttribute('name','comprar');
 
 listaPrecos.appendChild(quanti);
-listaPrecos.appendChild(check);
+listaPrecos.appendChild(confirm);
+

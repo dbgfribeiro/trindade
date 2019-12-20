@@ -25,7 +25,7 @@
   right: 10%;
 }
 .pagamento-info h2{
-  margin: 8% 0 0 10%;
+  margin: 6% 0 0 10%;
   color: #d92d2d;
 }
 .pagamento-info p {
@@ -36,6 +36,21 @@
 }
 .pagamento-info input:focus{
   outline: none;
+}
+
+.pagamento-info select{
+  font-size: 18px;
+  padding-left: 30px;
+  display: block;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #d92d2d;
+  outline: none;
+}
+.pagamento-info h3{
+  font-size: 1em;
+  font-weight: normal;
+  padding-bottom: 2%;
 }
 .containerCheck{
   display: block;
@@ -91,6 +106,7 @@
   color: #000;
   border: 2px solid #d92d2d;
 }
+
 
 
 #eventos {
