@@ -16,25 +16,23 @@
     <nav>
 
       <a href="index.html"><img src="img/logoFullW.png" alt="logo-trindade"></a>
-      <input id="hamburguer" type="checkbox">
 
-      <div>
-        <label for="hamburguer" class="hamburguer" id="mostra-menu">
-          <span class="barra"></span>
-        </label>
-
-        <div class="menu">
-          <div class="menu-info">
-            <ul>
-              <li><a href="index.html">início</a></li>
-              <li><a href="agenda.html">agenda</a></li>
-              <li><a href="sobre.html">sobre</a></li>
-              <li><a href="bilheteira.html">bilheteira</a></li>
-            </ul>
-            <img src="img/tr.png" alt="TR">
-          </div>
-          <div class="menu-transp"></div>
+      <div id="hamburguer">
+        <span class="barra" id="barraCima"></span>
+        <span class="barra" id="barraMeio"></span>
+        <span class="barra" id="barraBaixo"></span>
+      </div>
+      <div id="menu">
+        <div class="menu-info">
+          <ul>
+            <li><a href="index.html">início</a></li>
+            <li><a href="agenda.html">agenda</a></li>
+            <li><a href="sobre.html">sobre</a></li>
+            <li><a href="bilheteira.html">bilheteira</a></li>
+          </ul>
+          <img src="img/tr.png" alt="TR">
         </div>
+        <div class="menu-transp"></div>
       </div>
 
     </nav>
@@ -283,7 +281,8 @@
 
   </footer>
 
-  <script src="js/myScript.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

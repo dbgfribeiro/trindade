@@ -38,18 +38,6 @@
   width: 27vw;
 }
 
-.foto-historia img:nth-child(2) {
-  display: none;
-}
-
-.foto-historia:hover img:first-child {
-  display: none;
-}
-
-.foto-historia:hover img:nth-child(2) {
-  display: block;
-}
-
 .info-desenv {
   margin-left: 5%;
   margin-right: 5%;

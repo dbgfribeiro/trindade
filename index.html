@@ -17,24 +17,23 @@
     <nav>
 
       <a href="index.html"><img src="img/logoFullB.png" alt="logo-trindade"></a>
-      <input id="hamburguer" type="checkbox">
-      <div>
-        <label for="hamburguer" class="hamburguer" id="mostra-menu">
-          <span class="barra" id="barra"></span>
-        </label>
 
-        <div class="menu">
-          <div class="menu-info">
-            <ul>
-              <li><a href="index.html">início</a></li>
-              <li><a href="agenda.html">agenda</a></li>
-              <li><a href="sobre.html">sobre</a></li>
-              <li><a href="bilheteira.html">bilheteira</a></li>
-            </ul>
-            <img src="img/tr.png" alt="TR">
-          </div>
-          <div class="menu-transp"></div>
+      <div id="hamburguer">
+        <span class="barra" id="barraCima"></span>
+        <span class="barra" id="barraMeio"></span>
+        <span class="barra" id="barraBaixo"></span>
+      </div>
+      <div id="menu">
+        <div class="menu-info">
+          <ul>
+            <li><a href="index.html">início</a></li>
+            <li><a href="agenda.html">agenda</a></li>
+            <li><a href="sobre.html">sobre</a></li>
+            <li><a href="bilheteira.html">bilheteira</a></li>
+          </ul>
+          <img src="img/tr.png" alt="TR">
         </div>
+        <div class="menu-transp"></div>
       </div>
 
     </nav>
@@ -44,16 +43,23 @@
 
 
     <section id="intro">
-      <div id="fundo-cortinas"></div>
       <div class="abertura-img">
         <img src="img/curt_left.jpg" alt="cortina-lado-esquerdo" id="esquerda">
         <img src="img/curt_right.jpg" alt="cortina-lado-direito" id="direita">
       </div>
+      <div id="fundo-abertura"></div>
+      <div id="frase-intro">
+        <h3 id="frase"></h3>
+        <p id="autor"></p>
+        <a href="#" onclick="abrir()">Ir para o site</a>
+      </div>
+
+
       <div class="intro-img">
         <img src="img/trindade.jpg" alt="fotografia-fachada">
       </div>
       <div class="conteudo-saudacao">
-        <video autoplay loop muted controls>
+        <video autoplay loop muted>
           <source src="img/150anos.mp4" type="video/mp4">
           <source src="img/150anos.ogg" type="video/ogg">
         </video>
@@ -110,13 +116,14 @@
 
 
     <section id="subscricao">
-
       <form class="formulario" method="POST" action="submissao.php">
-          <input type="text" name="nome" placeholder="Nome">
+        <h2>Subscreve</h2>
+        <p>Notícias Teatro da Trindade</p>
+        <input class="nome" type="text" name="nome" placeholder="Nome" id="nome-sub">
         <br>
-          <input type="email" name="email" placeholder="Endereço de e-mail">
+        <input class="mail" type="email" name="email" placeholder="Endereço de e-mail" id="mail-sub">
         <br>
-          <input type="submit" name="subscrever" value="Submeter">
+        <input class="sub" type="submit" name="subscrever" value="Submeter" id="subscrever">
       </form>
     </section>
 
@@ -170,7 +177,8 @@
     </div>
 
   </footer>
-  <script src="js/myScript.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

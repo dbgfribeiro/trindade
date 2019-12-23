@@ -1,34 +1,66 @@
 /*--------------------INTRO---------------------*/
 #intro {
   height: auto;
-  padding-bottom: 120px;
+  padding-bottom: 10%;
   background-image: url(../img/fundo.svg);
   background-position: center;
   background-size: cover;
 }
 
-.abertura-img{
-  position: absolute;
+.abertura-img {
   display: flex;
   position: fixed;
   justify-content: space-between;
-  z-index: 20;
+  z-index: 10;
 }
-.abertura-img img{
+
+.abertura-img img {
   position: absolute;
   width: 50vw;
   transition: 2s;
 }
-.abertura-img #direita{
+
+.abertura-img #direita {
   left: 50vw;
 }
 
-#fundo-cortinas{
+#frase-intro {
+  padding: 15% 0;
+  font-size: 1.5em;
+  z-index: 20;
+  color: #fff;
+  text-align: center;
   position: fixed;
-  background-color: #000;
-  transition: 3s;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  transition: 2s;
+}
+
+#frase-intro p {
+  margin: 2% 0 10% 0;
+}
+
+#frase-intro a {
+  background-color: #d92d2d;
+  text-decoration: none;
+  color: #fff;
+  padding: 2% 4%;
+  transition: 0.2s;
+}
+
+#frase-intro a:hover {
+  background-color: #fff;
+  color: #d92d2d;
+}
+
+#fundo-abertura {
+  position: fixed;
+  z-index: 10;
+  background-color: #1f1f1f;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
+  display: none;
 }
 
 .intro-img img {
@@ -47,9 +79,11 @@
   margin-left: 5vw;
   width: 45vw;
 }
+
 .conteudo-saudacao video:focus {
   outline: none;
 }
+
 .texto-saudacao {
   margin: 5vw;
 }
@@ -67,14 +101,21 @@
   font-weight: 300;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   .texto-saudacao p {
     font-size: 1em;
+  }
+
+  .abertura-img img {
+    display: none;
+  }
+
+  #fundo-abertura {
+    display: block;
   }
 }
 
 @media screen and (max-width: 800px) {
-
   .conteudo-saudacao {
     margin-top: 15%;
     display: block;
@@ -89,14 +130,25 @@
   .texto-saudacao {
     margin-top: 5%;
   }
+
+  .texto-saudacao p {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #frase-intro {
+    font-size: 0.8em;
+  }
 }
 
 /*--------------------ESPETÁCULOS---------------------*/
 #espetaculos {
   height: auto;
-  padding-bottom: 5%;
+  padding-bottom: 4vh;
   background: #202020;
 }
+
 #espetaculos h1 {
   padding-top: 5%;
   color: #fff;
@@ -105,7 +157,7 @@
   font-weight: 900;
 }
 
-.slider-container{
+.slider-container {
   margin-top: 2%;
   overflow: hidden;
   margin-left: auto;
@@ -116,82 +168,103 @@
   height: 100%;
   display: flex;
 }
-.m-slider{
+
+.m-slider {
   display: none;
 }
-.cartazes-container{
+
+.cartazes-container {
   display: flex;
   flex-direction: row;
   width: 100%;
   clear: both;
   position: relative;
 }
-#cartazes-container-one{
+
+#cartazes-container-one {
   margin-left: 14vw;
   transition: 1.5s;
 }
-#cartazes-container-two{
+
+#cartazes-container-two {
   opacity: 0;
   transition: 1.5s;
 }
-.cartazes-container img{
+
+.cartazes-container img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   width: 20vw;
   margin-right: 6vw;
   position: relative;
   transition: 0.2s;
 }
-.cartazes-container img:hover{
+
+.cartazes-container img:hover {
   cursor: pointer;
   opacity: 0.5;
   transform: scale(1.1);
 }
-.controls{
+
+.controls {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 3%;
+  margin-top: 4vh;
 }
-.controls img{
+
+.controls img {
   cursor: pointer;
   width: 3%;
 }
-.controls a{
-  margin-top: 0.5%;
+
+.controls a {
+  margin-top: 0.5vh;
   font-size: 1.5em;
   text-decoration: none;
   color: #fff;
 }
+
 .controls a:hover {
   color: #d92d2d;
 }
 
 @media screen and (max-width: 800px) {
-  .d-slider{
+  #espetaculos {
+    padding-bottom: 10%;
+  }
+
+  .d-slider {
     display: none;
   }
-  .m-slider{
+
+  .m-slider {
     display: flex;
+    margin-top: 10%;
   }
-  .m-cartazes-container{
+
+  .m-cartazes-container {
     display: flex;
     flex-direction: row;
     width: 100%;
     clear: both;
     position: relative;
   }
-  #m-cartazes-container-one{
+
+  #m-cartazes-container-one {
     margin-left: 12vw;
     transition: 1.5s;
   }
-  #m-cartazes-container-two{
+
+  #m-cartazes-container-two {
     opacity: 0;
     transition: 1.5s;
   }
-  #m-cartazes-container-three{
+
+  #m-cartazes-container-three {
     opacity: 0;
     transition: 1.5s;
   }
-  .m-cartazes-container img{
+
+  .m-cartazes-container img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     width: 35vw;
     margin-right: 6vw;
@@ -199,15 +272,20 @@
     transition: 0.2s;
   }
 
-
-  .m-cartazes-container img:hover{
+  .m-cartazes-container img:hover {
     cursor: pointer;
     opacity: 0.5;
     transform: scale(1.1);
   }
+
+  .controls img {
+    width: 5%;
+  }
+
+  .controls a {
+    font-size: 1em;
+  }
 }
-
-
 
 /*--------------------FORM---------------------*/
 #subscricao {
@@ -224,36 +302,34 @@
   width: 45%;
 }
 
-.info-form {
-  float: right;
+.formulario h2, .formulario p {
   text-align: right;
+}
+
+.formulario h2 {
+  font-size: 3em;
+  color: #fff;
   margin-top: 10%;
 }
 
-.info-form h2 {
-  font-size: 3em;
-  color: #fff;
-}
-
-.info-form p {
+.formulario p {
   font-size: 2em;
   color: #d92d2d;
 }
 
-input:focus {
+.formulario input:focus {
   outline: none;
 }
 
-.inserir {
-  margin-left: calc(100% - 31vw);
-  margin-top: 40%;
+.nome {
+  margin-top: 10%;
 }
 
-.inserir input {
+.nome, .mail {
+  margin-left: calc(100% - 31vw);
   border-radius: 3px;
   width: 30vw;
   height: 6vh;
-  margin-top: 10px;
   font-size: 1em;
   background: transparent;
   padding-left: 10px;
@@ -261,12 +337,13 @@ input:focus {
   border: 1px solid #777;
 }
 
-.submissao {
-  margin-left: calc(100% - 31vw);
-  margin-top: 2%;
+.mail {
+  margin-top: 10px;
 }
 
-.submissao input {
+.sub {
+  margin-left: calc(100% - 31vw);
+  margin-top: 2%;
   border-radius: 3px;
   height: 6vh;
   width: 31vw;
@@ -278,7 +355,7 @@ input:focus {
   cursor: pointer;
 }
 
-.submissao input:hover {
+.sub:hover {
   background: #d92d2d;
   border: none;
   color: #202020;
@@ -293,44 +370,38 @@ input:focus {
     width: 60%;
   }
 
-  .inserir {
-    margin-top: 35%;
-    margin-left: calc(100% - 41vw);
-  }
-
-  .submissao {
-    margin-left: calc(100% - 41vw);
-  }
-
-  .info-form h2 {
+  .formulario h2 {
     font-size: 2em;
   }
 
-  .info-form p {
+  .formulario p {
     font-size: 1em;
   }
 
-  .inserir input {
+  .nome, .mail {
     width: 40vw;
+    margin-left: calc(100% - 41vw);
   }
 
-  .submissao input {
+  .sub {
+    margin-left: calc(100% - 41vw);
     width: 42vw;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .info-form {
+  .formulario h2 {
     margin-top: 30%;
   }
 
-  .inserir {
-    margin-top: 70%;
-    margin-left: calc(100% - 45vw);
+  .nome, .mail {
+    width: 50vw;
+    margin-left: calc(100% - 55vw);
   }
 
-  .submissao {
+  .sub {
     margin-top: 3%;
-    margin-left: calc(100% - 44vw);
+    width: 52vw;
+    margin-left: calc(100% - 54vw);
   }
 }

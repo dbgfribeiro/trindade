@@ -9,89 +9,46 @@ nav img {
   margin: 20px 20px;
 }
 
-.hamburguer {
+#hamburguer {
+  cursor: pointer;
   position: absolute;
   right: 0;
-  margin-top: 25px;
-  margin-right: 25px;
   width: 30px;
-  padding-top: 11px;
   height: 13px;
+  top: 6vh;
+  right: 6vh;
 }
 
-label {
-  cursor: pointer;
-}
-
-/*---Desenha as 3 barras do hamburguer---*/
 .barra {
   position: fixed;
   display: block;
   width: 30px;
   height: 3px;
-  box-shadow: 0px 0px 3px 0px #1f1f1f;
-  transition: 1s ease-in-out;
+  transition: 0.4s ease-in-out;
   border-radius: 200px;
   background: #d92d2d;
   z-index: 2;
 }
 
-.barra:before,
-.barra:after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
+#barraCima, #barraMeio, #barraBaixo {
   box-shadow: 0px 0px 3px 0px #1f1f1f;
-  background: #d92d2d;
-  position: absolute;
-  transition: 0.5s ease-in-out;
-  border-radius: 200px;
 }
 
-.barra:before {
-  bottom: 10px;
+#barraBaixo {
+  top: 7.2vh;
 }
 
-.barra:after {
-  top: 10px;
-}
-
-#hamburguer, #menu {
-  display: none;
-}
-
-/*--Rotação das barras para formar uma cruz--*/
-input:checked~div .barra {
-  transform: rotate(45deg);
-  box-shadow: none;
-  background: #fff;
-}
-
-input:checked~div .barra:before {
-  transform: rotate(90deg);
-  bottom: 0;
-  box-shadow: none;
-  background: #fff;
-}
-
-input:checked~div .barra:after {
-  transform: rotate(90deg);
-  top: 0;
-  box-shadow: none;
-  background: #fff;
-}
-
-input:checked~div .menu {
-  display: block;
+#barraCima {
+  top: 4.8vh;
 }
 
 /*-----------------Desenho do menu-----------*/
-.menu {
+#menu {
   display: none;
   position: fixed;
   width: 100vw;
   z-index: 1;
+  transition: all 0.5s ease;
 }
 
 .menu-info {
@@ -103,6 +60,7 @@ input:checked~div .menu {
   right: 0;
   box-shadow: -5px 0px 50px 0px #202020;
   position: absolute;
+  transition: all 0.5s ease;
 }
 
 .menu-info ul {
@@ -110,10 +68,9 @@ input:checked~div .menu {
 }
 
 .menu-info li {
-  margin-top: 40px;
+  margin: 5vh 5vh 0 0;
   list-style: none;
   text-align: right;
-  margin-right: 20px;
 }
 
 .menu-info a {
@@ -142,12 +99,12 @@ input:checked~div .menu {
   background: rgba(20, 20, 20, 0.8);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .menu-info ul {
     margin-top: 45%;
   }
 
-  .menu a {
+  #menu a {
     font-size: 1.5em;
   }
 
@@ -159,7 +116,7 @@ input:checked~div .menu {
     width: 50vw;
   }
 
-  .menu img {
+  #menu img {
     width: 55vw;
   }
 }
@@ -236,6 +193,7 @@ footer {
     font-size: 0.3em;
   }
 }
+
 @media screen and (max-width: 400px) {
   .footer-infos {
     font-size: 0.2em;
